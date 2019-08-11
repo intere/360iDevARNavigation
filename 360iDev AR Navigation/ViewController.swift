@@ -6,21 +6,64 @@
 //  Copyright © 2019 Eric Internicola. All rights reserved.
 //
 
+import CoreLocation
 import UIKit
 
 /// These are the actions for each (non-title) cell:
 enum Action: String {
     case showPins = "Show Location Pins"
     case navigateToConference = "Navigate to Hyatt"
-    case navigateToHenrys = "Navigate to Henry's"
+    case navigateToHenrys = "Navigate to Henry's Tavern"
     case navigateToFoodTrucks = "Navigate to Food Trucks"
+    case navigateToRhinoBeerGarden = "Navigate to RiNo Beer Garden"
 
     static let all: [Action] = [
         .showPins,
         .navigateToConference,
         .navigateToHenrys,
-        .navigateToFoodTrucks
+        .navigateToFoodTrucks,
+        .navigateToRhinoBeerGarden
     ]
+
+    /// Is this Action a location?
+    var isLocation: Bool {
+        switch self {
+        case .showPins:
+            return false
+        default:
+            return true
+        }
+    }
+
+    var location: CLLocation? {
+        switch self {
+        case .navigateToConference:
+            return CLLocation(latitude: 39.7456001, longitude: -105.023832)
+        case .navigateToHenrys:
+            return CLLocation(latitude: 39.7440861, longitude: -104.9915639)
+        case .navigateToFoodTrucks:
+            return CLLocation(latitude: 39.7337442, longitude: -104.9972431)
+        case .navigateToRhinoBeerGarden:
+            return CLLocation(latitude: 39.7701405, longitude: -104.9735078)
+        default:
+            return nil
+        }
+    }
+
+    var address: String? {
+        switch self {
+        case .navigateToConference:
+            return "1750 Welton St, Denver, CO 80202"
+        case .navigateToHenrys:
+            return "500 16th St, Denver, CO 80202"
+        case .navigateToFoodTrucks:
+            return "Civic Center, Denver, CO"
+        case .navigateToRhinoBeerGarden:
+            return "3800 Walnut St, Denver, CO 80205"
+        default:
+            return nil
+        }
+    }
 }
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
