@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,6 +12,8 @@
 		368D250323009270003D014E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 368D250123009270003D014E /* Main.storyboard */; };
 		368D250523009274003D014E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 368D250423009274003D014E /* Assets.xcassets */; };
 		368D250823009274003D014E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 368D250623009274003D014E /* LaunchScreen.storyboard */; };
+		368D25102300992A003D014E /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 368D250F2300992A003D014E /* Podfile */; };
+		7CEB054D02FDF8A723B50A2F /* Pods_360iDev_AR_Navigation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5610097DF2CE77FD5F4F905 /* Pods_360iDev_AR_Navigation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,10 @@
 		368D250423009274003D014E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		368D250723009274003D014E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		368D250923009274003D014E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		368D250F2300992A003D014E /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		48AC4C60A3ACA9F1CAE6E421 /* Pods-360iDev AR Navigation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-360iDev AR Navigation.debug.xcconfig"; path = "Target Support Files/Pods-360iDev AR Navigation/Pods-360iDev AR Navigation.debug.xcconfig"; sourceTree = "<group>"; };
+		C5610097DF2CE77FD5F4F905 /* Pods_360iDev_AR_Navigation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_360iDev_AR_Navigation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6E6296B617F283D3BD5FBB6 /* Pods-360iDev AR Navigation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-360iDev AR Navigation.release.xcconfig"; path = "Target Support Files/Pods-360iDev AR Navigation/Pods-360iDev AR Navigation.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7CEB054D02FDF8A723B50A2F /* Pods_360iDev_AR_Navigation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		320F2D7285A35F978AFF6A2F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				48AC4C60A3ACA9F1CAE6E421 /* Pods-360iDev AR Navigation.debug.xcconfig */,
+				D6E6296B617F283D3BD5FBB6 /* Pods-360iDev AR Navigation.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		368D24F123009270003D014E = {
 			isa = PBXGroup;
 			children = (
 				368D24FC23009270003D014E /* 360iDev AR Navigation */,
 				368D24FB23009270003D014E /* Products */,
+				320F2D7285A35F978AFF6A2F /* Pods */,
+				7163EF8C9A806DDCD31B47C4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +72,7 @@
 		368D24FC23009270003D014E /* 360iDev AR Navigation */ = {
 			isa = PBXGroup;
 			children = (
+				368D250F2300992A003D014E /* Podfile */,
 				368D24FD23009270003D014E /* AppDelegate.swift */,
 				368D24FF23009270003D014E /* ViewController.swift */,
 				368D250123009270003D014E /* Main.storyboard */,
@@ -64,6 +83,14 @@
 			path = "360iDev AR Navigation";
 			sourceTree = "<group>";
 		};
+		7163EF8C9A806DDCD31B47C4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C5610097DF2CE77FD5F4F905 /* Pods_360iDev_AR_Navigation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 368D250C23009274003D014E /* Build configuration list for PBXNativeTarget "360iDev AR Navigation" */;
 			buildPhases = (
+				588AA8A85910943A6C7193AC /* [CP] Check Pods Manifest.lock */,
 				368D24F623009270003D014E /* Sources */,
 				368D24F723009270003D014E /* Frameworks */,
 				368D24F823009270003D014E /* Resources */,
+				225775D516E7D8CF6E4620B3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -124,11 +153,54 @@
 			files = (
 				368D250823009274003D014E /* LaunchScreen.storyboard in Resources */,
 				368D250523009274003D014E /* Assets.xcassets in Resources */,
+				368D25102300992A003D014E /* Podfile in Resources */,
 				368D250323009270003D014E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		225775D516E7D8CF6E4620B3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-360iDev AR Navigation/Pods-360iDev AR Navigation-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-360iDev AR Navigation/Pods-360iDev AR Navigation-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-360iDev AR Navigation/Pods-360iDev AR Navigation-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		588AA8A85910943A6C7193AC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-360iDev AR Navigation-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		368D24F623009270003D014E /* Sources */ = {
@@ -280,6 +352,7 @@
 		};
 		368D250D23009274003D014E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 48AC4C60A3ACA9F1CAE6E421 /* Pods-360iDev AR Navigation.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +371,7 @@
 		};
 		368D250E23009274003D014E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D6E6296B617F283D3BD5FBB6 /* Pods-360iDev AR Navigation.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
