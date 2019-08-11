@@ -107,6 +107,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             if indexPath.row == 0 {
                 let vc = ShowPinsViewController()
                 navigationController?.pushViewController(vc, animated: true)
+            } else {
+                let vc = NavigateToViewController()
+                vc.action = Action.all[indexPath.row]
+                navigationController?.pushViewController(vc, animated: true)
             }
         }
     }
