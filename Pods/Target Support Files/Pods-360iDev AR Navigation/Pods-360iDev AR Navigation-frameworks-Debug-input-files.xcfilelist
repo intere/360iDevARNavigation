@@ -1,2 +1,3 @@
 ${PODS_ROOT}/Target Support Files/Pods-360iDev AR Navigation/Pods-360iDev AR Navigation-frameworks.sh
 ${BUILT_PRODUCTS_DIR}/ARCL/ARCL.framework
+${BUILT_PRODUCTS_DIR}/Cartography/Cartography.framework

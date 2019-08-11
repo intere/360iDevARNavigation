@@ -7,12 +7,14 @@
 //
 
 import ARCL
+import Cartography
 import CoreLocation
 import UIKit
 
 class ShowPinsViewController: UIViewController {
 
     let sceneLocationView = SceneLocationView()
+    let activityView = UIActivityIndicatorView(style: .whiteLarge)
 
     var currentLocation: CLLocation? {
         return sceneLocationView.sceneLocationManager.currentLocation
@@ -21,13 +23,20 @@ class ShowPinsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.addSubview(sceneLocationView)
-        sceneLocationView.frame = view.bounds
-        addPins()
-    }
+        view.addSubview(activityView)
 
-    override func viewDidLayoutSubviews() {
-        super.viewDidLayoutSubviews()
-        sceneLocationView.frame = view.bounds
+        constrain(view, sceneLocationView, activityView) { view, sceneLocationView, activityView in
+            sceneLocationView.left == view.left
+            sceneLocationView.top == view.top
+            sceneLocationView.right == view.right
+            sceneLocationView.bottom == view.bottom
+
+            activityView.centerX == view.centerX
+            activityView.centerY == view.centerY
+        }
+
+        showActivityControl()
+        addPins()
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -49,6 +58,8 @@ class ShowPinsViewController: UIViewController {
                 }
         }
 
+        hideActivityControl()
+
         Action.all.forEach { action in
             guard action.isLocation else {
                 return
@@ -66,4 +77,20 @@ class ShowPinsViewController: UIViewController {
                 locationNode: node)
         }
     }
+}
+
+// MARK: - Implementation
+
+extension ShowPinsViewController {
+
+    func showActivityControl() {
+        activityView.isHidden = false
+        activityView.startAnimating()
+    }
+
+    func hideActivityControl() {
+        activityView.isHidden = false
+        activityView.stopAnimating()
+    }
+
 }

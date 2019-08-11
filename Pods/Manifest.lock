@@ -1,8 +1,14 @@
 PODS:
   - ARCL (1.2.1)
+  - Cartography (4.0.0)
 
 DEPENDENCIES:
   - "ARCL (from `git@github.com:ProjectDent/ARKit-CoreLocation.git`, branch `develop`)"
+  - Cartography
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Cartography
 
 EXTERNAL SOURCES:
   ARCL:
@@ -16,7 +22,8 @@ CHECKOUT OPTIONS:
 
 SPEC CHECKSUMS:
   ARCL: d1a534afb4d5b8ff5c51c5cfe23bb998df36c606
+  Cartography: c5626d29056b20f1e95c017326ee4df57cc39ad8
 
-PODFILE CHECKSUM: a0ff1c62ec6f8e0f28d942d19aacb9311c8811d0
+PODFILE CHECKSUM: dbeea2efb13d3498c75fec5f24edfeec8549ff2c
 
 COCOAPODS: 1.7.5

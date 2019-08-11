@@ -7,11 +7,13 @@
 //
 
 import ARCL
+import Cartography
 import MapKit
 import UIKit
 
 class NavigateToViewController: UIViewController {
     let sceneLocationView = SceneLocationView()
+    let activityView = UIActivityIndicatorView(style: .whiteLarge)
 
     var currentLocation: CLLocation? {
         return sceneLocationView.sceneLocationManager.currentLocation
@@ -26,7 +28,18 @@ class NavigateToViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.addSubview(sceneLocationView)
-        sceneLocationView.frame = view.bounds
+        view.addSubview(activityView)
+        
+        constrain(view, sceneLocationView, activityView) { view, sceneLocationView, activityView in
+            sceneLocationView.left == view.left
+            sceneLocationView.top == view.top
+            sceneLocationView.right == view.right
+            sceneLocationView.bottom == view.bottom
+
+            activityView.centerX == view.centerX
+            activityView.centerY == view.centerY
+        }
+        showActivityControl()
     }
 
     override func viewDidLayoutSubviews() {
@@ -48,6 +61,17 @@ class NavigateToViewController: UIViewController {
 // MARK: - Implementation
 
 extension NavigateToViewController {
+
+    func showActivityControl() {
+        activityView.isHidden = false
+        activityView.startAnimating()
+    }
+
+    func hideActivityControl() {
+        activityView.isHidden = false
+        activityView.stopAnimating()
+    }
+
 
     func navigate(to address: String?) {
         guard let address = address else {
@@ -105,6 +129,7 @@ extension NavigateToViewController {
         }
 
         self.sceneLocationView.addRoutes(routes: routes)
+        hideActivityControl()
     }
 
 }
