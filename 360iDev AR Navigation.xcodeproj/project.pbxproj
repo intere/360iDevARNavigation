@@ -13,6 +13,7 @@
 		368D250523009274003D014E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 368D250423009274003D014E /* Assets.xcassets */; };
 		368D250823009274003D014E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 368D250623009274003D014E /* LaunchScreen.storyboard */; };
 		368D25102300992A003D014E /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 368D250F2300992A003D014E /* Podfile */; };
+		368D25122300B567003D014E /* ShowPinsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368D25112300B567003D014E /* ShowPinsViewController.swift */; };
 		7CEB054D02FDF8A723B50A2F /* Pods_360iDev_AR_Navigation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5610097DF2CE77FD5F4F905 /* Pods_360iDev_AR_Navigation.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +26,7 @@
 		368D250723009274003D014E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		368D250923009274003D014E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		368D250F2300992A003D014E /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		368D25112300B567003D014E /* ShowPinsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowPinsViewController.swift; sourceTree = "<group>"; };
 		48AC4C60A3ACA9F1CAE6E421 /* Pods-360iDev AR Navigation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-360iDev AR Navigation.debug.xcconfig"; path = "Target Support Files/Pods-360iDev AR Navigation/Pods-360iDev AR Navigation.debug.xcconfig"; sourceTree = "<group>"; };
 		C5610097DF2CE77FD5F4F905 /* Pods_360iDev_AR_Navigation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_360iDev_AR_Navigation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6E6296B617F283D3BD5FBB6 /* Pods-360iDev AR Navigation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-360iDev AR Navigation.release.xcconfig"; path = "Target Support Files/Pods-360iDev AR Navigation/Pods-360iDev AR Navigation.release.xcconfig"; sourceTree = "<group>"; };
@@ -79,6 +81,7 @@
 				368D250423009274003D014E /* Assets.xcassets */,
 				368D250623009274003D014E /* LaunchScreen.storyboard */,
 				368D250923009274003D014E /* Info.plist */,
+				368D25112300B567003D014E /* ShowPinsViewController.swift */,
 			);
 			path = "360iDev AR Navigation";
 			sourceTree = "<group>";
@@ -209,6 +212,7 @@
 			files = (
 				368D250023009270003D014E /* ViewController.swift in Sources */,
 				368D24FE23009270003D014E /* AppDelegate.swift in Sources */,
+				368D25122300B567003D014E /* ShowPinsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

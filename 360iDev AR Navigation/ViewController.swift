@@ -64,6 +64,21 @@ enum Action: String {
             return nil
         }
     }
+
+    var image: UIImage? {
+        switch self {
+        case .navigateToConference:
+            return UIImage(named: "hyatt_bubble")
+        case .navigateToHenrys:
+            return UIImage(named: "henrys_bubble")
+        case .navigateToFoodTrucks:
+            return UIImage(named: "civic_center_bubble")
+        case .navigateToRhinoBeerGarden:
+            return UIImage(named: "beer_garden_bubble")
+        default:
+            return nil
+        }
+    }
 }
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
@@ -89,7 +104,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             guard indexPath.row < Action.all.count else {
                 return
             }
-            // TODO: Handle actions
+            if indexPath.row == 0 {
+                let vc = ShowPinsViewController()
+                navigationController?.pushViewController(vc, animated: true)
+            }
         }
     }
 
@@ -105,19 +123,16 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         return Action.all.count
     }
 
-    func tableView(_ tableView: UITableView,
-                   cellForRowAt indexPath: IndexPath)
-        -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if indexPath.section == 0 {
-            return tableView.dequeueReusableCell(
-                withIdentifier: "LogoCell", for: indexPath)
+            return tableView.dequeueReusableCell(withIdentifier: "LogoCell", for: indexPath)
         }
 
-        let cell = tableView.dequeueReusableCell(
-            withIdentifier: "ActionCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ActionCell", for: indexPath)
         guard indexPath.row < Action.all.count else {
             return cell
         }
+
         cell.textLabel?.text = Action.all[indexPath.row].rawValue
         return cell
     }
