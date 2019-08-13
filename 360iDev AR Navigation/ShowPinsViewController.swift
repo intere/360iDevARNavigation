@@ -22,6 +22,7 @@ class ShowPinsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = Action.showPins.title
         view.addSubview(sceneLocationView)
         view.addSubview(activityView)
 
@@ -64,7 +65,7 @@ class ShowPinsViewController: UIViewController {
             guard action.isLocation else {
                 return
             }
-            guard let location = action.location else {
+            guard let location = action.location(with: currentLocation.altitude + 10) else {
                 return assertionFailure()
             }
             guard let image = action.image else {
@@ -73,8 +74,7 @@ class ShowPinsViewController: UIViewController {
 
             let node = LocationAnnotationNode(location: location, image: image)
 
-            sceneLocationView.addLocationNodeWithConfirmedLocation(
-                locationNode: node)
+            sceneLocationView.addLocationNodeWithConfirmedLocation(locationNode: node)
         }
     }
 }

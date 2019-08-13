@@ -35,16 +35,31 @@ enum Action: String {
         }
     }
 
-    var location: CLLocation? {
+    var title: String {
+        switch self {
+        case .showPins:
+            return "Pins"
+        case .navigateToConference:
+            return "Hyatt"
+        case .navigateToHenrys:
+            return "Henry's"
+        case .navigateToFoodTrucks:
+            return "Food Trucks"
+        case .navigateToRhinoBeerGarden:
+            return "Beer Garden"
+        }
+    }
+
+    func location(with elevation: CLLocationDistance) -> CLLocation? {
         switch self {
         case .navigateToConference:
-            return CLLocation(latitude: 39.7456001, longitude: -105.023832)
+            return CLLocation(latitude: 39.7456001, longitude: -105.023832, altitude: elevation)
         case .navigateToHenrys:
-            return CLLocation(latitude: 39.7440861, longitude: -104.9915639)
+            return CLLocation(latitude: 39.7440861, longitude: -104.9915639, altitude: elevation)
         case .navigateToFoodTrucks:
-            return CLLocation(latitude: 39.7337442, longitude: -104.9972431)
+            return CLLocation(latitude: 39.7337442, longitude: -104.9972431, altitude: elevation)
         case .navigateToRhinoBeerGarden:
-            return CLLocation(latitude: 39.7701405, longitude: -104.9735078)
+            return CLLocation(latitude: 39.7701405, longitude: -104.9735078, altitude: elevation)
         default:
             return nil
         }
@@ -139,6 +154,14 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 
         cell.textLabel?.text = Action.all[indexPath.row].rawValue
         return cell
+    }
+
+}
+
+extension CLLocation {
+
+    convenience init(latitude: CLLocationDegrees, longitude: CLLocationDegrees, altitude: CLLocationDistance) {
+        self.init(coordinate: CLLocationCoordinate2D(latitude: latitude, longitude: longitude), altitude: altitude)
     }
 
 }
