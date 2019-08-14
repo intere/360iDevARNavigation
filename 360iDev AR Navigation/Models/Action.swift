@@ -1,8 +1,8 @@
 //
-//  ViewController.swift
+//  Action.swift
 //  360iDev AR Navigation
 //
-//  Created by Eric Internicola on 8/11/19.
+//  Created by Eric Internicola on 8/14/19.
 //  Copyright © 2019 Eric Internicola. All rights reserved.
 //
 
@@ -35,6 +35,7 @@ enum Action: String {
         }
     }
 
+    /// Get the title for this action's view controller
     var title: String {
         switch self {
         case .showPins:
@@ -50,6 +51,10 @@ enum Action: String {
         }
     }
 
+    /// Get the location of this action with the provided elevation.
+    ///
+    /// - Parameter elevation: The elevation to set on the pin.
+    /// - Returns: A CLLocation with the appropriate location and altitude.
     func location(with elevation: CLLocationDistance) -> CLLocation? {
         switch self {
         case .navigateToConference:
@@ -65,6 +70,7 @@ enum Action: String {
         }
     }
 
+    /// Get the address for this pin (for navigation).
     var address: String? {
         switch self {
         case .navigateToConference:
@@ -80,6 +86,7 @@ enum Action: String {
         }
     }
 
+    /// Get the image for this pin.
     var image: UIImage? {
         switch self {
         case .navigateToConference:
@@ -94,74 +101,4 @@ enum Action: String {
             return nil
         }
     }
-}
-
-class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-
-    @IBOutlet weak var tableView: UITableView!
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        tableView.dataSource = self
-        tableView.delegate = self
-        tableView.rowHeight = UITableView.automaticDimension
-        tableView.estimatedRowHeight = 100
-        tableView.tableFooterView = UIView()
-    }
-
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if indexPath.section == 0 {
-            guard let url = URL(string: "https://360idev.com/") else {
-                return
-            }
-            UIApplication.shared.open(url, options: [:], completionHandler: nil)
-        } else {
-            guard indexPath.row < Action.all.count else {
-                return
-            }
-            if indexPath.row == 0 {
-                let vc = ShowPinsViewController()
-                navigationController?.pushViewController(vc, animated: true)
-            } else {
-                let vc = NavigateToViewController()
-                vc.action = Action.all[indexPath.row]
-                navigationController?.pushViewController(vc, animated: true)
-            }
-        }
-    }
-
-    func numberOfSections(in tableView: UITableView) -> Int {
-        return 2
-    }
-
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if section == 0 {
-            return 1
-        }
-
-        return Action.all.count
-    }
-
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if indexPath.section == 0 {
-            return tableView.dequeueReusableCell(withIdentifier: "LogoCell", for: indexPath)
-        }
-
-        let cell = tableView.dequeueReusableCell(withIdentifier: "ActionCell", for: indexPath)
-        guard indexPath.row < Action.all.count else {
-            return cell
-        }
-
-        cell.textLabel?.text = Action.all[indexPath.row].rawValue
-        return cell
-    }
-
-}
-
-extension CLLocation {
-
-    convenience init(latitude: CLLocationDegrees, longitude: CLLocationDegrees, altitude: CLLocationDistance) {
-        self.init(coordinate: CLLocationCoordinate2D(latitude: latitude, longitude: longitude), altitude: altitude)
-    }
-
 }

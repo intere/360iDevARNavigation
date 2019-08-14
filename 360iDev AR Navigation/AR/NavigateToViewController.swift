@@ -84,7 +84,10 @@ extension NavigateToViewController {
         activityView.stopAnimating()
     }
 
-
+    /// Searches for the provided address and if a MKMapItem comes back
+    /// it then gets directions to that location.
+    ///
+    /// - Parameter address: The address you want to navigate to.
     func navigate(to address: String?) {
         guard let address = address else {
             return
@@ -106,6 +109,10 @@ extension NavigateToViewController {
         }
     }
 
+    /// Finds directions to the provided MKMapItem (location) and then shows
+    /// those directions on the map and in ARCL.
+    ///
+    /// - Parameter mapLocation: The mapLocation to navigate to.
     func navigate(to mapLocation: MKMapItem) {
         let request = MKDirections.Request()
         request.source = MKMapItem.forCurrentLocation()
@@ -121,32 +128,41 @@ extension NavigateToViewController {
             guard let response = response else {
                 return assertionFailure("No error, but no response, either.")
             }
+            guard let route = response.routes.first else {
+                return assertionFailure()
+            }
 
             DispatchQueue.main.async { [weak self] in
                 guard let self = self else {
                     return
                 }
 
-                self.map(routes: response.routes)
-                self.show(routes: response.routes)
+                self.map(route: route)
+                self.show(route: route)
             }
         }
     }
 
-    func map(routes: [MKRoute]) {
-        mapView.addOverlays(routes.map({ $0.polyline }))
-        mapView.zoom(to: routes)
+    /// Shows the route on the map.
+    ///
+    /// - Parameter route: The route to show on the map.
+    func map(route: MKRoute) {
+        mapView.addOverlay(route.polyline)
+        mapView.zoom(to: route)
     }
 
-    func show(routes: [MKRoute]) {
+    /// Shows the route in AR.
+    ///
+    /// - Parameter route: The route to be shown.
+    func show(route: MKRoute) {
         guard let location = currentLocation,
             location.horizontalAccuracy < 15 else {
                 return DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) { [weak self] in
-                    self?.show(routes: routes)
+                    self?.show(route: route)
                 }
         }
 
-        sceneLocationView.addRoutes(routes: routes)
+        sceneLocationView.addRoutes(routes: [route])
         hideActivityControl()
     }
 
@@ -167,52 +183,4 @@ extension NavigateToViewController: MKMapViewDelegate {
         return pr
     }
 
-}
-
-// MARK: - Helpers
-
-extension MKMapView {
-
-    func zoom(to routes: [MKRoute], animated: Bool = true) {
-        guard let route = routes.first else {
-            return
-        }
-
-        let mapRect = route.polyline.boundingMapRect
-
-        setVisibleMapRect(mapRect, animated: animated)
-    }
-
-    func zoomRegion(for routes: [MKRoute]) -> MKCoordinateRegion {
-        let points = routes.map({ CLLocation(coordinate: $0.polyline.coordinate, altitude: 0) })
-        return zoomRegion(for: points)
-    }
-
-    /// Provides a zoom region for the provided points
-    ///
-    /// - Parameter points: The points to calculate the zoom region for.
-    /// - Returns: The zoom region that allows you to see all of the points.
-    func zoomRegion(for points: [CLLocation]) -> MKCoordinateRegion {
-        return getZoomRegion(points)
-    }
-
-    /// helper that will figure out what region on the map should be visible, based on your current points.
-    ///
-    /// - Parameter points: the points to analyze to determine the zoom window.
-    /// - Returns: A zoom region.
-    func getZoomRegion(_ points: [CLLocation]) -> MKCoordinateRegion {
-        let latitudes = points.map { $0.coordinate.latitude }
-        let longitudes = points.map { $0.coordinate.longitude }
-
-        guard let maxLat = latitudes.max(), let minLat = latitudes.min(),
-            let maxLong = longitudes.max(), let minLong = longitudes.min() else {
-                return MKCoordinateRegion()
-        }
-
-        let center = CLLocationCoordinate2D(latitude: (minLat + maxLat) / 2,
-                                            longitude: (minLong + maxLong) / 2)
-        let span = MKCoordinateSpan(latitudeDelta: (maxLat - minLat) * 1.3,
-                                    longitudeDelta: (maxLong - minLong) * 1.3)
-        return MKCoordinateRegion(center: center, span: span)
-    }
 }
