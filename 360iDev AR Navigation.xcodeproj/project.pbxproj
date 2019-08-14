@@ -12,7 +12,6 @@
 		368D250323009270003D014E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 368D250123009270003D014E /* Main.storyboard */; };
 		368D250523009274003D014E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 368D250423009274003D014E /* Assets.xcassets */; };
 		368D250823009274003D014E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 368D250623009274003D014E /* LaunchScreen.storyboard */; };
-		368D25102300992A003D014E /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 368D250F2300992A003D014E /* Podfile */; };
 		368D25122300B567003D014E /* ShowPinsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368D25112300B567003D014E /* ShowPinsViewController.swift */; };
 		368D25142300BF31003D014E /* NavigateToViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368D25132300BF31003D014E /* NavigateToViewController.swift */; };
 		368D251723043AE3003D014E /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368D251623043AE3003D014E /* Action.swift */; };
@@ -28,7 +27,6 @@
 		368D250423009274003D014E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		368D250723009274003D014E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		368D250923009274003D014E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		368D250F2300992A003D014E /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		368D25112300B567003D014E /* ShowPinsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowPinsViewController.swift; sourceTree = "<group>"; };
 		368D25132300BF31003D014E /* NavigateToViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigateToViewController.swift; sourceTree = "<group>"; };
 		368D251623043AE3003D014E /* Action.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
@@ -63,9 +61,9 @@
 			isa = PBXGroup;
 			children = (
 				368D24FC23009270003D014E /* 360iDev AR Navigation */,
-				368D24FB23009270003D014E /* Products */,
-				320F2D7285A35F978AFF6A2F /* Pods */,
 				7163EF8C9A806DDCD31B47C4 /* Frameworks */,
+				320F2D7285A35F978AFF6A2F /* Pods */,
+				368D24FB23009270003D014E /* Products */,
 			);
 			sourceTree = "<group>";
 		};
@@ -80,16 +78,15 @@
 		368D24FC23009270003D014E /* 360iDev AR Navigation */ = {
 			isa = PBXGroup;
 			children = (
-				368D251C23043D2E003D014E /* Main */,
-				368D251923043B91003D014E /* Extensions */,
 				368D251823043B63003D014E /* AR */,
+				368D251923043B91003D014E /* Extensions */,
+				368D251C23043D2E003D014E /* Main */,
 				368D251523043AD2003D014E /* Models */,
-				368D250F2300992A003D014E /* Podfile */,
 				368D24FD23009270003D014E /* AppDelegate.swift */,
-				368D250123009270003D014E /* Main.storyboard */,
 				368D250423009274003D014E /* Assets.xcassets */,
-				368D250623009274003D014E /* LaunchScreen.storyboard */,
 				368D250923009274003D014E /* Info.plist */,
+				368D250623009274003D014E /* LaunchScreen.storyboard */,
+				368D250123009270003D014E /* Main.storyboard */,
 			);
 			path = "360iDev AR Navigation";
 			sourceTree = "<group>";
@@ -105,8 +102,8 @@
 		368D251823043B63003D014E /* AR */ = {
 			isa = PBXGroup;
 			children = (
-				368D25112300B567003D014E /* ShowPinsViewController.swift */,
 				368D25132300BF31003D014E /* NavigateToViewController.swift */,
+				368D25112300B567003D014E /* ShowPinsViewController.swift */,
 			);
 			path = AR;
 			sourceTree = "<group>";
@@ -197,7 +194,6 @@
 			files = (
 				368D250823009274003D014E /* LaunchScreen.storyboard in Resources */,
 				368D250523009274003D014E /* Assets.xcassets in Resources */,
-				368D25102300992A003D014E /* Podfile in Resources */,
 				368D250323009270003D014E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -269,6 +265,7 @@
 				368D250223009270003D014E /* Base */,
 			);
 			name = Main.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 		368D250623009274003D014E /* LaunchScreen.storyboard */ = {
@@ -277,6 +274,7 @@
 				368D250723009274003D014E /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
