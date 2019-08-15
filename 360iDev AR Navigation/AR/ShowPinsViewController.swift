@@ -66,10 +66,14 @@ class ShowPinsViewController: UIViewController {
                 return
             }
             guard let location = action.location(with: currentLocation.altitude + 10) else {
-                return assertionFailure()
+                return DispatchQueue.main.async { [weak self] in
+                    self?.showErrorAlert(message: "No location associated with \(action.title), please contact support.")
+                }
             }
             guard let image = action.image else {
-                return assertionFailure()
+                return DispatchQueue.main.async { [weak self] in
+                    self?.showErrorAlert(message: "No image associated with \(action.title), please contact support.")
+                }
             }
 
             let node = LocationAnnotationNode(location: location, image: image)

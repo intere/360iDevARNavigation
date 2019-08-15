@@ -99,10 +99,19 @@ extension NavigateToViewController {
         let search = MKLocalSearch(request: request)
         search.start { [weak self] response, error in
             if let error = error {
-                return assertionFailure("Error searching for \(address): \(error.localizedDescription)")
+                return DispatchQueue.main.async { [weak self] in
+                    self?.showErrorAlert(message: "Error searching for \(address): \(error.localizedDescription)")
+                }
             }
-            guard let response = response, let destination = response.mapItems.first else {
-                return assertionFailure("No response or empty response")
+            guard let response = response else {
+                return DispatchQueue.main.async { [weak self] in
+                    self?.showErrorAlert(message: "No response back searching for \(address), please try again.")
+                }
+            }
+            guard let destination = response.mapItems.first else {
+                return DispatchQueue.main.async { [weak self] in
+                    self?.showErrorAlert(message: "No routes returned for \(address), please try again.")
+                }
             }
 
             self?.navigate(to: destination)
@@ -123,13 +132,19 @@ extension NavigateToViewController {
 
         directions.calculate { response, error in
             if let error = error {
-                return print("Error getting directions: \(error.localizedDescription)")
+                return DispatchQueue.main.async { [weak self] in
+                    self?.showErrorAlert(message: "Error get directions: \(error.localizedDescription)")
+                }
             }
             guard let response = response else {
-                return assertionFailure("No error, but no response, either.")
+                return DispatchQueue.main.async { [weak self] in
+                    self?.showErrorAlert(message: "No directions response received, please try again.")
+                }
             }
             guard let route = response.routes.first else {
-                return assertionFailure()
+                return DispatchQueue.main.async { [weak self] in
+                    self?.showErrorAlert(message: "No navigation route received, please try again.")
+                }
             }
 
             DispatchQueue.main.async { [weak self] in
