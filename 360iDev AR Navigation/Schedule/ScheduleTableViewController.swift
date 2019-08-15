@@ -42,7 +42,7 @@ class ScheduleTableViewController: UITableViewController {
             indexPath.row < schedule.count else {
                 return cell
         }
-        sessionCell.textLabel?.text = schedule[indexPath.row].postTitle
+        sessionCell.session = schedule[indexPath.row]
 
 
         return sessionCell

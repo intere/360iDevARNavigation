@@ -21,12 +21,32 @@ class ScheduleServiceTest: XCTestCase {
             XCTAssertNotEqual(0, schedule.count)
         }
 
-        guard let schedule = ScheduleService.shared.schedule[DateEnum.august262019] else {
-            return XCTFail("Failed to get the schedule")
-        }
+        DateEnum.allSorted.forEach { date in
+            guard let schedule = ScheduleService.shared.schedule[date] else {
+                return XCTFail("Failed to get the schedule")
+            }
 
-        schedule.forEach { (session) in
-            print("Session \(session.time): \(session.postTitle)")
+            schedule.forEach { (session) in
+                print("Session \(session.time): \(session.postTitle)")
+            }
+        }
+    }
+
+    func testParseSpeakers() {
+        ScheduleService.shared.loadScheduleFromBundle()
+
+        DateEnum.allSorted.forEach { date in
+            guard let schedule = ScheduleService.shared.schedule[date] else {
+                return XCTFail("Failed to get the schedule")
+            }
+            schedule.forEach { session in
+                session.speakers.forEach { speaker in
+                    guard let imageUrlString = speaker.imageUrlString else {
+                        return XCTFail("Speaker without image: \(speaker.postTitle)")
+                    }
+                    print("Speaker Image: \(imageUrlString)")
+                }
+            }
         }
     }
 

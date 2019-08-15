@@ -63,6 +63,15 @@ struct Speaker: Codable {
     let url: String
     let postImage: String
 
+    var imageUrlString: String? {
+        let parts = postImage.split(separator: "\"")
+        guard parts.count > 1 else {
+            return nil
+        }
+
+        return String(parts[1]).replacingOccurrences(of: "&amp;", with: "&")
+    }
+
     enum CodingKeys: String, CodingKey {
         case postTitle = "post_title"
         case featured, url
