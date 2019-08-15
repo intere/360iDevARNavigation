@@ -33,10 +33,14 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
             guard indexPath.row < Action.all.count else {
                 return
             }
-            if indexPath.row == 0 {
+            switch indexPath.row {
+            case 0:
+                let scheduleVC = ScheduleTableViewController.loadFromStoryboard()
+                navigationController?.pushViewController(scheduleVC, animated: true)
+            case 1:
                 let vc = ShowPinsViewController()
                 navigationController?.pushViewController(vc, animated: true)
-            } else {
+            default:
                 let vc = NavigateToViewController()
                 vc.action = Action.all[indexPath.row]
                 navigationController?.pushViewController(vc, animated: true)

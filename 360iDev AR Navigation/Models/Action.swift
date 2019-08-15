@@ -11,6 +11,7 @@ import UIKit
 
 /// These are the actions for each (non-title) cell:
 enum Action: String {
+    case schedule = "Schedule"
     case showPins = "Show Location Pins"
     case navigateToConference = "Navigate to Hyatt"
     case navigateToHenrys = "Navigate to Henry's Tavern"
@@ -18,6 +19,7 @@ enum Action: String {
     case navigateToRhinoBeerGarden = "Navigate to RiNo Beer Garden"
 
     static let all: [Action] = [
+        .schedule,
         .showPins,
         .navigateToConference,
         .navigateToHenrys,
@@ -28,7 +30,7 @@ enum Action: String {
     /// Is this Action a location?
     var isLocation: Bool {
         switch self {
-        case .showPins:
+        case .showPins, .schedule:
             return false
         default:
             return true
@@ -38,6 +40,8 @@ enum Action: String {
     /// Get the title for this action's view controller
     var title: String {
         switch self {
+        case .schedule:
+            return "Schedule"
         case .showPins:
             return "Pins"
         case .navigateToConference:

@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		36000B302304FE1100AD733F /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 36000B2F2304FE1100AD733F /* README.md */; };
+		36000B332305003A00AD733F /* Schedule.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36000B322305003A00AD733F /* Schedule.storyboard */; };
+		36000B352305005700AD733F /* ScheduleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36000B342305005700AD733F /* ScheduleTableViewController.swift */; };
+		36000B37230500EC00AD733F /* schedule.json in Resources */ = {isa = PBXBuildFile; fileRef = 36000B36230500EC00AD733F /* schedule.json */; };
+		36000B392305016900AD733F /* Schedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36000B382305016900AD733F /* Schedule.swift */; };
+		36000B412305019900AD733F /* ARNavigationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36000B402305019900AD733F /* ARNavigationTests.swift */; };
+		36000B492305038000AD733F /* ScheduleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36000B482305038000AD733F /* ScheduleService.swift */; };
+		36000B4B2305045E00AD733F /* ScheduleServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36000B4A2305045E00AD733F /* ScheduleServiceTest.swift */; };
+		36000B4D23050DD800AD733F /* SessionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36000B4C23050DD800AD733F /* SessionCell.swift */; };
 		368D24FE23009270003D014E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368D24FD23009270003D014E /* AppDelegate.swift */; };
 		368D250023009270003D014E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368D24FF23009270003D014E /* MainViewController.swift */; };
 		368D250323009270003D014E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 368D250123009270003D014E /* Main.storyboard */; };
@@ -20,7 +29,28 @@
 		7CEB054D02FDF8A723B50A2F /* Pods_360iDev_AR_Navigation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5610097DF2CE77FD5F4F905 /* Pods_360iDev_AR_Navigation.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		36000B432305019900AD733F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 368D24F223009270003D014E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 368D24F923009270003D014E;
+			remoteInfo = "360iDev AR Navigation";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		36000B2F2304FE1100AD733F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		36000B322305003A00AD733F /* Schedule.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Schedule.storyboard; sourceTree = "<group>"; };
+		36000B342305005700AD733F /* ScheduleTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleTableViewController.swift; sourceTree = "<group>"; };
+		36000B36230500EC00AD733F /* schedule.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = schedule.json; sourceTree = "<group>"; };
+		36000B382305016900AD733F /* Schedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Schedule.swift; sourceTree = "<group>"; };
+		36000B3E2305019900AD733F /* 360iDevARNavigationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = 360iDevARNavigationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		36000B402305019900AD733F /* ARNavigationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARNavigationTests.swift; sourceTree = "<group>"; };
+		36000B422305019900AD733F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		36000B482305038000AD733F /* ScheduleService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleService.swift; sourceTree = "<group>"; };
+		36000B4A2305045E00AD733F /* ScheduleServiceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleServiceTest.swift; sourceTree = "<group>"; };
+		36000B4C23050DD800AD733F /* SessionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionCell.swift; sourceTree = "<group>"; };
 		368D24FA23009270003D014E /* 360iDev AR Navigation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "360iDev AR Navigation.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		368D24FD23009270003D014E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		368D24FF23009270003D014E /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -39,6 +69,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		36000B3B2305019900AD733F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		368D24F723009270003D014E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -59,10 +96,34 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		36000B312304FFEB00AD733F /* Schedule */ = {
+			isa = PBXGroup;
+			children = (
+				36000B36230500EC00AD733F /* schedule.json */,
+				36000B322305003A00AD733F /* Schedule.storyboard */,
+				36000B342305005700AD733F /* ScheduleTableViewController.swift */,
+				36000B482305038000AD733F /* ScheduleService.swift */,
+				36000B4C23050DD800AD733F /* SessionCell.swift */,
+			);
+			path = Schedule;
+			sourceTree = "<group>";
+		};
+		36000B3F2305019900AD733F /* 360iDevARNavigationTests */ = {
+			isa = PBXGroup;
+			children = (
+				36000B402305019900AD733F /* ARNavigationTests.swift */,
+				36000B422305019900AD733F /* Info.plist */,
+				36000B4A2305045E00AD733F /* ScheduleServiceTest.swift */,
+			);
+			path = 360iDevARNavigationTests;
+			sourceTree = "<group>";
+		};
 		368D24F123009270003D014E = {
 			isa = PBXGroup;
 			children = (
+				36000B2F2304FE1100AD733F /* README.md */,
 				368D24FC23009270003D014E /* 360iDev AR Navigation */,
+				36000B3F2305019900AD733F /* 360iDevARNavigationTests */,
 				7163EF8C9A806DDCD31B47C4 /* Frameworks */,
 				320F2D7285A35F978AFF6A2F /* Pods */,
 				368D24FB23009270003D014E /* Products */,
@@ -73,6 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				368D24FA23009270003D014E /* 360iDev AR Navigation.app */,
+				36000B3E2305019900AD733F /* 360iDevARNavigationTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -80,6 +142,7 @@
 		368D24FC23009270003D014E /* 360iDev AR Navigation */ = {
 			isa = PBXGroup;
 			children = (
+				36000B312304FFEB00AD733F /* Schedule */,
 				368D251823043B63003D014E /* AR */,
 				368D251923043B91003D014E /* Extensions */,
 				368D251C23043D2E003D014E /* Main */,
@@ -97,6 +160,7 @@
 			isa = PBXGroup;
 			children = (
 				368D251623043AE3003D014E /* Action.swift */,
+				36000B382305016900AD733F /* Schedule.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -138,6 +202,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		36000B3D2305019900AD733F /* 360iDevARNavigationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 36000B452305019900AD733F /* Build configuration list for PBXNativeTarget "360iDevARNavigationTests" */;
+			buildPhases = (
+				36000B3A2305019900AD733F /* Sources */,
+				36000B3B2305019900AD733F /* Frameworks */,
+				36000B3C2305019900AD733F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				36000B442305019900AD733F /* PBXTargetDependency */,
+			);
+			name = 360iDevARNavigationTests;
+			productName = 360iDevARNavigationTests;
+			productReference = 36000B3E2305019900AD733F /* 360iDevARNavigationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		368D24F923009270003D014E /* 360iDev AR Navigation */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 368D250C23009274003D014E /* Build configuration list for PBXNativeTarget "360iDev AR Navigation" */;
@@ -167,6 +249,10 @@
 				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = "Eric Internicola";
 				TargetAttributes = {
+					36000B3D2305019900AD733F = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 368D24F923009270003D014E;
+					};
 					368D24F923009270003D014E = {
 						CreatedOnToolsVersion = 10.2.1;
 					};
@@ -186,18 +272,29 @@
 			projectRoot = "";
 			targets = (
 				368D24F923009270003D014E /* 360iDev AR Navigation */,
+				36000B3D2305019900AD733F /* 360iDevARNavigationTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		36000B3C2305019900AD733F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		368D24F823009270003D014E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				368D250823009274003D014E /* LaunchScreen.storyboard in Resources */,
 				368D250523009274003D014E /* Assets.xcassets in Resources */,
+				36000B37230500EC00AD733F /* schedule.json in Resources */,
+				36000B302304FE1100AD733F /* README.md in Resources */,
 				368D250323009270003D014E /* Main.storyboard in Resources */,
+				36000B332305003A00AD733F /* Schedule.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,14 +343,27 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		36000B3A2305019900AD733F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36000B4B2305045E00AD733F /* ScheduleServiceTest.swift in Sources */,
+				36000B412305019900AD733F /* ARNavigationTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		368D24F623009270003D014E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36000B4D23050DD800AD733F /* SessionCell.swift in Sources */,
 				368D250023009270003D014E /* MainViewController.swift in Sources */,
+				36000B352305005700AD733F /* ScheduleTableViewController.swift in Sources */,
 				368D24FE23009270003D014E /* AppDelegate.swift in Sources */,
+				36000B392305016900AD733F /* Schedule.swift in Sources */,
 				368D25142300BF31003D014E /* NavigateToViewController.swift in Sources */,
 				368D251723043AE3003D014E /* Action.swift in Sources */,
+				36000B492305038000AD733F /* ScheduleService.swift in Sources */,
 				368D251B23043BA4003D014E /* MKMapView+Zoom.swift in Sources */,
 				368D25122300B567003D014E /* ShowPinsViewController.swift in Sources */,
 				368D251E2304F9E5003D014E /* UIViewController+Alert.swift in Sources */,
@@ -261,6 +371,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		36000B442305019900AD733F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 368D24F923009270003D014E /* 360iDev AR Navigation */;
+			targetProxy = 36000B432305019900AD733F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		368D250123009270003D014E /* Main.storyboard */ = {
@@ -284,6 +402,48 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		36000B462305019900AD733F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 268S5GJFWZ;
+				INFOPLIST_FILE = 360iDevARNavigationTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.intere.-60iDevARNavigationTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/360iDev AR Navigation.app/360iDev AR Navigation";
+			};
+			name = Debug;
+		};
+		36000B472305019900AD733F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 268S5GJFWZ;
+				INFOPLIST_FILE = 360iDevARNavigationTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.intere.-60iDevARNavigationTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/360iDev AR Navigation.app/360iDev AR Navigation";
+			};
+			name = Release;
+		};
 		368D250A23009274003D014E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -443,6 +603,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		36000B452305019900AD733F /* Build configuration list for PBXNativeTarget "360iDevARNavigationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				36000B462305019900AD733F /* Debug */,
+				36000B472305019900AD733F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		368D24F523009270003D014E /* Build configuration list for PBXProject "360iDev AR Navigation" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
