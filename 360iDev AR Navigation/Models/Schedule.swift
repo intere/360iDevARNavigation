@@ -65,11 +65,14 @@ struct Speaker: Codable {
 
     var imageUrlString: String? {
         let parts = postImage.split(separator: "\"")
-        guard parts.count > 1 else {
-            return nil
-        }
 
-        return String(parts[1]).replacingOccurrences(of: "&amp;", with: "&")
+        for idx in 0..<parts.count where parts[idx].contains("src=") {
+            guard idx + 1 < parts.count else {
+                continue
+            }
+            return String(parts[idx+1]).replacingOccurrences(of: "&amp;", with: "&")
+        }
+        return nil
     }
 
     enum CodingKeys: String, CodingKey {

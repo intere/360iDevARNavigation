@@ -44,7 +44,7 @@ class ScheduleServiceTest: XCTestCase {
                     guard let imageUrlString = speaker.imageUrlString else {
                         return XCTFail("Speaker without image: \(speaker.postTitle)")
                     }
-                    print("Speaker Image: \(imageUrlString)")
+                    print("Speaker '\(speaker.postTitle)' Image: \(imageUrlString)")
                 }
             }
         }

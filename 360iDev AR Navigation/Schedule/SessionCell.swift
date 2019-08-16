@@ -99,6 +99,14 @@ class SessionCell: UITableViewCell {
             }
         }
 
+        if lastSpeakerView == nil {
+            constrain(contentView, titleLabel, moreInfoButton) { view, titleLabel, moreInfoButton in
+                titleLabel.bottom <= view.bottom - 8
+                moreInfoButton.bottom <= view.bottom - 8
+
+            }
+        }
+
         moreInfoButton.setTitle("More info", for: .normal)
         moreInfoButton.addTarget(self, action: #selector(tappedMoreInfo(_:)), for: .touchUpInside)
     }
@@ -154,6 +162,12 @@ class SpeakerView: UIView {
             nameLabel.right == view.right
         }
         nameLabel.numberOfLines = 0
+
+        imageView.layer.borderWidth = 1
+        imageView.layer.masksToBounds = false
+        imageView.layer.borderColor = UIColor.black.cgColor
+        imageView.layer.cornerRadius = 40
+        imageView.clipsToBounds = true
     }
 }
 
