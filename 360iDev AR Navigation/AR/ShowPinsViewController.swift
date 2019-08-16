@@ -7,6 +7,7 @@
 //
 
 import ARCL
+import ARKit
 import Cartography
 import CoreLocation
 import UIKit
@@ -23,6 +24,13 @@ class ShowPinsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         title = Action.showPins.title
+
+        guard ARConfiguration.isSupported else {
+            return showErrorAlert(message: "Your device does not support ARKit") { [weak self] _ in
+                self?.dismiss(animated: true, completion: nil)
+            }
+        }
+
         view.addSubview(sceneLocationView)
         view.addSubview(activityView)
 
