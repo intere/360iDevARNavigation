@@ -6,6 +6,7 @@
 //  Copyright © 2019 Eric Internicola. All rights reserved.
 //
 
+import Cartography
 import UIKit
 
 class ScheduleTableViewController: UITableViewController {
@@ -25,8 +26,20 @@ class ScheduleTableViewController: UITableViewController {
         return DateEnum.allSorted.count
     }
 
-    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return DateEnum.allSorted[section].rawValue
+//    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+//        return DateEnum.allSorted[section].rawValue
+//    }
+
+    override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let view = HeaderView()
+        view.date = DateEnum.allSorted[section]
+        view.buildView()
+
+        return view
+    }
+
+    override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 60
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -48,5 +61,28 @@ class ScheduleTableViewController: UITableViewController {
         return sessionCell
     }
 
+}
 
+class HeaderView: UIView {
+    private let label = UILabel()
+    var date: DateEnum? {
+        didSet {
+            label.text = date?.rawValue
+        }
+    }
+
+    func buildView() {
+        addSubview(label)
+        label.textColor = .black
+        backgroundColor = .lightGray
+
+        constrain(self, label) { view, label in
+            label.top == view.top + 8
+            label.left == view.left + 8
+            label.right == view.right - 8
+            label.bottom == view.bottom + 8
+        }
+
+        label.font = UIFont.boldSystemFont(ofSize: 20)
+    }
 }

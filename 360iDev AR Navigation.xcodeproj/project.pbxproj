@@ -16,6 +16,8 @@
 		36000B492305038000AD733F /* ScheduleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36000B482305038000AD733F /* ScheduleService.swift */; };
 		36000B4B2305045E00AD733F /* ScheduleServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36000B4A2305045E00AD733F /* ScheduleServiceTest.swift */; };
 		36000B4D23050DD800AD733F /* SessionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36000B4C23050DD800AD733F /* SessionCell.swift */; };
+		36000B4F230628DF00AD733F /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36000B4E230628DF00AD733F /* UIColor+Hex.swift */; };
+		36000B512306508D00AD733F /* String+HTML.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36000B502306508D00AD733F /* String+HTML.swift */; };
 		368D24FE23009270003D014E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368D24FD23009270003D014E /* AppDelegate.swift */; };
 		368D250023009270003D014E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368D24FF23009270003D014E /* MainViewController.swift */; };
 		368D250323009270003D014E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 368D250123009270003D014E /* Main.storyboard */; };
@@ -51,6 +53,8 @@
 		36000B482305038000AD733F /* ScheduleService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleService.swift; sourceTree = "<group>"; };
 		36000B4A2305045E00AD733F /* ScheduleServiceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleServiceTest.swift; sourceTree = "<group>"; };
 		36000B4C23050DD800AD733F /* SessionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionCell.swift; sourceTree = "<group>"; };
+		36000B4E230628DF00AD733F /* UIColor+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
+		36000B502306508D00AD733F /* String+HTML.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+HTML.swift"; sourceTree = "<group>"; };
 		368D24FA23009270003D014E /* 360iDev AR Navigation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "360iDev AR Navigation.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		368D24FD23009270003D014E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		368D24FF23009270003D014E /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -179,6 +183,8 @@
 			children = (
 				368D251A23043BA4003D014E /* MKMapView+Zoom.swift */,
 				368D251D2304F9E5003D014E /* UIViewController+Alert.swift */,
+				36000B4E230628DF00AD733F /* UIColor+Hex.swift */,
+				36000B502306508D00AD733F /* String+HTML.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -359,6 +365,8 @@
 				36000B4D23050DD800AD733F /* SessionCell.swift in Sources */,
 				368D250023009270003D014E /* MainViewController.swift in Sources */,
 				36000B352305005700AD733F /* ScheduleTableViewController.swift in Sources */,
+				36000B4F230628DF00AD733F /* UIColor+Hex.swift in Sources */,
+				36000B512306508D00AD733F /* String+HTML.swift in Sources */,
 				368D24FE23009270003D014E /* AppDelegate.swift in Sources */,
 				36000B392305016900AD733F /* Schedule.swift in Sources */,
 				368D25142300BF31003D014E /* NavigateToViewController.swift in Sources */,

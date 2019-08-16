@@ -19,7 +19,7 @@ class SessionCell: UITableViewCell {
     var session: Session? {
         didSet {
             timeLabel.text = session?.timeLabelText
-            titleLabel.text = session?.postTitle
+            titleLabel.text = session?.postTitle.stringByDecodingHTMLEntities
             locationLabel.text = session?.location.rawValue
         }
     }
@@ -44,6 +44,13 @@ class SessionCell: UITableViewCell {
         [timeLabel, titleLabel, locationLabel, moreInfoButton].forEach {
             contentView.addSubview($0)
         }
+        titleLabel.numberOfLines = 0
+
+        titleLabel.textColor = UIColor(rgb: 0x859d25)
+        moreInfoButton.backgroundColor = .black
+        moreInfoButton.contentEdgeInsets = UIEdgeInsets(top: 8, left: 8, bottom: 8, right: 8)
+        moreInfoButton.setContentCompressionResistancePriority(.defaultHigh, for: .horizontal)
+        titleLabel.setContentCompressionResistancePriority(.defaultLow, for: .horizontal)
 
         constrain(contentView, timeLabel, titleLabel, locationLabel, moreInfoButton) { (view, timeLabel, titleLabel, locationLabel, moreInfoButton) in
 
@@ -54,24 +61,34 @@ class SessionCell: UITableViewCell {
             locationLabel.left == timeLabel.right + 8
             locationLabel.right == view.right - 8
 
-            titleLabel.top == timeLabel.bottom + 8
+            titleLabel.top == moreInfoButton.top
             titleLabel.left == timeLabel.left
-            titleLabel.right == moreInfoButton.left - 8
+            titleLabel.right <= moreInfoButton.left - 8
+            titleLabel.bottom <= view.bottom - 8
 
             moreInfoButton.right == view.right - 8
-            moreInfoButton.top == locationLabel.top
+            moreInfoButton.top == locationLabel.bottom + 8
             moreInfoButton.height == 44
 
-            moreInfoButton.bottom == view.bottom - 8
+            moreInfoButton.bottom <= view.bottom - 8
         }
 
         moreInfoButton.setTitle("More Info", for: .normal)
+        moreInfoButton.addTarget(self, action: #selector(tappedMoreInfo(_:)), for: .touchUpInside)
+    }
+
+    @IBAction
+    func tappedMoreInfo(_ source: Any) {
+        guard let session = session, let url = URL(string: session.url) else {
+            return
+        }
+        UIApplication.shared.open(url, options: [:])
     }
 
 }
 
 class SpeakerView: UIView {
-
+    // 859d25
 }
 
 // MARK: - Session Extensions
