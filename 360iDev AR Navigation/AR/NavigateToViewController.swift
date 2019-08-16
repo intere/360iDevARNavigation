@@ -7,6 +7,7 @@
 //
 
 import ARCL
+import ARKit
 import Cartography
 import MapKit
 import UIKit
@@ -30,6 +31,12 @@ class NavigateToViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        guard ARConfiguration.isSupported else {
+            return showErrorAlert(message: "Your device does not support ARKit") { [weak self] _ in
+                self?.dismiss(animated: true, completion: nil)
+            }
+        }
+
         [sceneLocationView, mapView, activityView].forEach { view.addSubview($0) }
 
         constrain(view, sceneLocationView, mapView, activityView) { view, sceneLocationView, mapView, activityView in
@@ -52,11 +59,6 @@ class NavigateToViewController: UIViewController {
 
         mapView.showsUserLocation = true
         mapView.delegate = self
-    }
-
-    override func viewDidLayoutSubviews() {
-        super.viewDidLayoutSubviews()
-        sceneLocationView.frame = view.bounds
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -178,6 +180,11 @@ extension NavigateToViewController {
         }
 
         sceneLocationView.addRoutes(routes: [route])
+        if let locationNodes = sceneLocationView.sceneNode?.childNodes.filter({ $0 is LocationNode }), locationNodes.count > 20 {
+            for idx in 20..<locationNodes.count {
+                locationNodes[idx].isHidden = true
+            }
+        }
         hideActivityControl()
     }
 

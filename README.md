@@ -1,21 +1,20 @@
 # 360iDev AR Navigation
 
-An ARKit-CoreLocation based experience for 360iDev 2019.  Directions to the Hyatt (conference) and the various food locations that the conference will go to.
+An ARKit-CoreLocation based experience for 360iDev 2019.  
+AR Features include:
+- Directions to the Hyatt (conference) and the various food venues that the conference will go to.
+- AR Pins to show you the direction of each of the conference locations (Hyatt, food venues).
 
-### TODO
-- [ ] Instead of "print" or "assertionFailure" - provide user back with error messages
-- [ ] Handle messages for unsupported devices
-- [ ] Add the Schedule
+v1.0.1 Adds the Schedule
 
-### Schedule JSON
-```bash
-curl 'https://360idev.com/wp-admin/admin-ajax.php' \
-  -H 'sec-fetch-mode: cors' \
-  -H 'origin: https://360idev.com' \
-  -H 'content-type: application/x-www-form-urlencoded; charset=UTF-8' \
-  -H 'accept: application/json, text/javascript, */*; q=0.01' \
-  -H 'referer: https://360idev.com/schedule/' \
-  -H 'authority: 360idev.com' \
-  -H 'sec-fetch-site: same-origin' --data 'action=get_schedule&data-timestamp=&data-location=&data-track=' --compressed > /tmp/schedule.json
-  
-```
+## Use Cases
+
+### Navigation
+<img src="https://user-images.githubusercontent.com/2284832/63196813-7462ae00-c033-11e9-8a8f-814c869dcf61.gif" width="300">
+
+### AR Pins
+Think: What direction is Henry's Tavern?
+<img src="https://user-images.githubusercontent.com/2284832/63197036-f3f07d00-c033-11e9-8e41-ab8da85a4638.PNG" width="300">
+
+### Schedule
+<img src="https://user-images.githubusercontent.com/2284832/63196682-11711700-c033-11e9-99c7-97d28a834503.gif" width="300">
