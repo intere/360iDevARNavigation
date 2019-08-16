@@ -14,6 +14,7 @@ v1.0.1 Adds the Schedule
 
 ### AR Pins
 Think: What direction is Henry's Tavern?
+
 <img src="https://user-images.githubusercontent.com/2284832/63197036-f3f07d00-c033-11e9-8e41-ab8da85a4638.PNG" width="300">
 
 ### Schedule
