@@ -7,167 +7,280 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		042436BC7D9B33990E5DFE36C4C1B22F /* Edges.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A436911AF48B1F965E1BB873BCA83D9 /* Edges.swift */; };
-		0431EFBC3255E810AE4F1D7F3810744F /* Constrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0832BBB74852AF9A15D378B6CBE117EF /* Constrain.swift */; };
-		17638CD98448242EB67F8B5B474D863C /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1286BD9CC3F1431DD7E6D631FBB111F5 /* MapKit.framework */; };
-		1911D9390266F097329AD8F75B9E8FCA /* SceneLocationEstimate+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CDDA114AE7403AA7327B70DDAF130FB /* SceneLocationEstimate+Extensions.swift */; };
-		22CE63D0329339E7B3CBC0113CD833E4 /* LayoutProxy+TypeErasure.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8D579624B0D17FBE75BE123B841F869 /* LayoutProxy+TypeErasure.swift */; };
-		25F8B70317F6F287D6092BD4B2FE0B34 /* CLLocation+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087E265DC27AEA4137D6D53B10C49588 /* CLLocation+Extensions.swift */; };
-		28ECFF81377431686F8F6EC0ED747018 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9198131727667F5A36AEE40099328680 /* UIKit.framework */; };
-		2A6243914F2EB0715258F3976A85A3B4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE1C87DD65575F3BFF2A2EB472E5344D /* Foundation.framework */; };
-		2C347167B7B5A220481FA1899A69A27A /* ConstraintGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7343D48AF6C47C0F83F9725ACCFD65D4 /* ConstraintGroup.swift */; };
-		313A0204CB675029D50A8EB7E4788256 /* CGPoint+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C24F2F5F0928FAB9DD680C301D9A56 /* CGPoint+Extensions.swift */; };
-		31A4ABCC2B72400DE3C7D3A60CE5C071 /* ARCL-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 248A9D7555CD82ED8870478297AD4EC0 /* ARCL-dummy.m */; };
-		339325FBE0064ACC45BBD33ADAA3511B /* SceneLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3676DD2B57462AA85F9388A50A875586 /* SceneLocationView.swift */; };
-		34F39C271054D560B43F8990372592A9 /* LayoutGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6AFA18D1A03E61A436420BE3ED63E2 /* LayoutGuide.swift */; };
-		375BDBC3E905D2E7D00975B4BCE11C02 /* SceneLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A841D8590C80691A1BA389E39288CC /* SceneLocationManager.swift */; };
-		4989C39C6D25B7EE7E8C2EC2275315A2 /* Pods-360iDev AR Navigation-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E2C6D210FF2DE53A1FEABA205A7361D /* Pods-360iDev AR Navigation-dummy.m */; };
-		4A21EEC2E3010B0FCFABEB0456794135 /* SceneLocationEstimate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B28AC2525DD51416EDD3F2680DE436 /* SceneLocationEstimate.swift */; };
-		4F90D9C85E84B6CA5FBD593BC29989F1 /* LayoutGuideProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B5BE169F5436BC802CFE9CE97607E3 /* LayoutGuideProxy.swift */; };
-		4FC97E9A19E5B31EC05F4F1A92E7AAD6 /* Edge.swift in Sources */ = {isa = PBXBuildFile; fileRef = F467D874651A8D955349E7680655003A /* Edge.swift */; };
-		504BD19E5B253ADFABCCDA92524584BF /* Align.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD47C7CD1C0A25DBD9A8D11AC3277E16 /* Align.swift */; };
-		5453E8CB1C9C9E5D881DE6333DAB441E /* SCNNode+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B3B388F4B4C508CD05DC22C64F5B89 /* SCNNode+Extensions.swift */; };
-		55683C80A15ADB61A43D85BFC22B57B2 /* Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A16E3151F69851E76129D8B71FA24F4 /* Size.swift */; };
-		5C7AE657DE96861F05DAA7B445C5A28C /* Coefficients.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929EE44ECF77E6218988AB1893A270B8 /* Coefficients.swift */; };
-		6202AA73EF7A71FD9F99113AC779CB06 /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF32EB9338AB56A4F4A6A9C09D3994DB /* Point.swift */; };
-		64EC99CAEF7D16187DB1EC49794DAF70 /* Cartography-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C125F290EEBFAEA139A1E3157ECB79D /* Cartography-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6B942D8BC61FD7F7E363FA59C4BB63FD /* Priority.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80899963A1F1C4834BCD04F790C17D18 /* Priority.swift */; };
-		6C2C8C03F6496EF5C656414D24BF3CF2 /* LocationAnnotationNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87B549B046115056618E36AC5EB36B7 /* LocationAnnotationNode.swift */; };
-		788415EEFA68D8E3958A1CAB215F43EB /* ARCL-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E84C93261C8C1E5303C82B63B70131A4 /* ARCL-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		78A4C2A82BDC1FB6DE7DBCBED85A8B63 /* AutoresizingMaskLayoutProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AA60DA4C5B8121C833081B76352E2AF /* AutoresizingMaskLayoutProxy.swift */; };
-		7FBBD2E699FC45EFE36A67B1DFE6818E /* ViewProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE89E168F2D412B74906CE8C43BE03B5 /* ViewProxy.swift */; };
-		82D520695DF2A4B845AB64556F74D182 /* SceneKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90E91DF3DD80E18E4420D8BA5480A48B /* SceneKit.framework */; };
-		85B7396BB1BC6F75ED1FA56E0388CE2D /* PolylineNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E785B446831503469B054B2806D5C5 /* PolylineNode.swift */; };
-		8CAC09A49010981835D986ECF3F144C8 /* Expression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81DA3EF765136A7F33FE4EF26AE04ACF /* Expression.swift */; };
-		96412009478E0C34729460474918272C /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D125C3865458FBC9DEEA7881F920B6 /* Extensions.swift */; };
-		9C4520A980B6F0A08524DA6AE43FCC0D /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B346BFF5238D1E2C045657ABFE6647 /* LocationManager.swift */; };
-		9FDCC7A5B398F92EE01CDB10A2CA03DC /* Distribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B9F3647E8D61CB2C4D0ED0E9BB215C /* Distribute.swift */; };
-		A730A1B971E33622C9D4488329356CF6 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA272986C62108D971D1681FF887203E /* CoreLocation.framework */; };
-		AC3285CF7CFB61E0ABE4048FE5BCD4ED /* Dimension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2A7D64CF0307978635BB0B3CB757B4 /* Dimension.swift */; };
-		AC5C12FAEE0412375C04322F39CAEEDD /* Compound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210B20FC0E7D53FBCB5DAE47E472554B /* Compound.swift */; };
-		AF8A364104B4AB683C83A29F91098B74 /* Pods-360iDev AR Navigation-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 46393ED138A2D1657745BED63F254B25 /* Pods-360iDev AR Navigation-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B22BBA186319E555F033AD9CD2928257 /* Context.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD23F23AD2D8F2BD4542AE47F8DE43DF /* Context.swift */; };
-		B65CA3061DEC6AE73543D7F7AC048DD6 /* SceneLocationView+ARSCNViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E6B5FB1335564BA12B8F5ECDCC83DFA /* SceneLocationView+ARSCNViewDelegate.swift */; };
-		BEBCF76D3E9834C4DEC3288CF380734E /* LayoutSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD14BA8D21D7EA21D83C49CA046A936F /* LayoutSupport.swift */; };
-		C7B67CE21E8F7C0B6608ADC8818E4B45 /* ARKit_CoreLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D754A8C256E2607E72D83DD0AA874B /* ARKit_CoreLocation.swift */; };
-		C911AA16E783670DCE1D6700E46543EE /* Constraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DEAFC03A39F339781BAB0A20FE23CC2 /* Constraint.swift */; };
-		C9827E4A928F57DDE1A4239F733F6404 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03650857F6BF7615C14336DF83E01B20 /* View.swift */; };
-		CCEB2B8D3403F249795613E1C3A077FE /* FloatingPoint+Radians.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8F68262B89347CDDC8C6DD6C599996D /* FloatingPoint+Radians.swift */; };
-		CD02DB6D267AFD48E78FB03BAC09F1FD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE1C87DD65575F3BFF2A2EB472E5344D /* Foundation.framework */; };
-		D496217CC474887D11037655BE63A40F /* LayoutSupportProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B90C3E11C14AD5659B5CEB6475C315 /* LayoutSupportProxy.swift */; };
-		DB00315A4C55F26CFBC7BB50CD637B63 /* LocationNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2209767DB14E0AC37101C25C08774B99 /* LocationNode.swift */; };
-		DD4AB122129B2AB0EC57C86EBC0F1A4D /* ScalingScheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0208E6B758ACA12D7295A11B2A37189E /* ScalingScheme.swift */; };
-		DE4D1D9AC817865FCCD8DBD7B773D59A /* SceneLocationViewEstimateDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFCA080FF4D6698A5C39295675C1AEF /* SceneLocationViewEstimateDelegate.swift */; };
-		E1BB795892DE6F64D5F4DFFB132A5E79 /* SCNVector3+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A3EBE503B8C51E2BB27BA4EB61B4C1 /* SCNVector3+Extensions.swift */; };
-		E24660514D4232A0A95D8464FC13A48B /* Property.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7E1FC8ADC3CEB8870ACB461670867D /* Property.swift */; };
-		E453BB8128EF0219CC03F1C2535F627A /* Cartography-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B29F001C0930623FCE4ABB5DD32E60D /* Cartography-dummy.m */; };
-		EFE26B035C606EF63FAB39B8BBB12324 /* LayoutItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2020E8696253356E82703E589CB9F34A /* LayoutItem.swift */; };
-		F92571315920B12CE657B195DA15ECD6 /* LayoutProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73D2D9E582DF84CCD337B259CCBFC52 /* LayoutProxy.swift */; };
-		F9C03E29F41DB4ED5901C128D165DC56 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE1C87DD65575F3BFF2A2EB472E5344D /* Foundation.framework */; };
-		FE438315281F1D39812C816112E7F55C /* BaseTypes+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14ACB533DF9562DD223E444BC3F9C59 /* BaseTypes+Extensions.swift */; };
+		00B48FBC95D04AEA853B9AE665D1E8E1 /* ImageFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4372AE4494CBE836919C0AE4BEF28F8D /* ImageFormat.swift */; };
+		041EB9FA2DCEE0A038C416616616D8A4 /* Placeholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D99E0DC2847BD6F97401742D3E8EEC8 /* Placeholder.swift */; };
+		042436BC7D9B33990E5DFE36C4C1B22F /* Edges.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0075B3792F33F292E1C003A8C73DEBE6 /* Edges.swift */; };
+		0431EFBC3255E810AE4F1D7F3810744F /* Constrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D27D6B922B2373A9BF059757083BFD /* Constrain.swift */; };
+		07C8948559CCE74CFE5903D4B9C858BD /* ExtensionHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = C627067441C1F80D6A961BCEBED77504 /* ExtensionHelpers.swift */; };
+		092C84399199A063781DAF6713C7ADE3 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5C2A766676187E711B1FD986AA4A12 /* ImageCache.swift */; };
+		1388453A0BFFADA63CDB60C211FDEA89 /* ImageTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18C60533C89F7AADA601A0BC56FB4A2 /* ImageTransition.swift */; };
+		14AA684EBDBF925E4AC4D118F69A846B /* Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67DCCC5482F1E62ABB22BE908CA07E3 /* Filter.swift */; };
+		17638CD98448242EB67F8B5B474D863C /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49A24D4A6BDDF7C0DF6317F09BEDA247 /* MapKit.framework */; };
+		1911D9390266F097329AD8F75B9E8FCA /* SceneLocationEstimate+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B1FB5CDD404177C5FCECE7D838AAB7B /* SceneLocationEstimate+Extensions.swift */; };
+		1B14B0AFAD836E3694F74730177DAE30 /* Kingfisher-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 335CDC51A7C9FF618E4A0C1D5278F1A2 /* Kingfisher-dummy.m */; };
+		203F98456AEFAAA6B288FADB0975CFCE /* Kingfisher-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CDCDEE9E8905BCF4382B0955267CF34A /* Kingfisher-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		212B4D0416F2F00EB61CE5338A73C24E /* SessionDataTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5A4BD527C094DFE9E1CE0B99718B1C /* SessionDataTask.swift */; };
+		21FEB4966B1C9F1C1BBDB5EE9E337610 /* CacheSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF03D6636AB3C125D90BFEBFB59CDAE /* CacheSerializer.swift */; };
+		22CE63D0329339E7B3CBC0113CD833E4 /* LayoutProxy+TypeErasure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783017A78B69187EBFD2554056197B2E /* LayoutProxy+TypeErasure.swift */; };
+		241E465897A56A5EE5FA73FEAEDAB450 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC11CC662F0417F635B21756DA845A4 /* Result.swift */; };
+		257B0FEB5F806A21583C3E9B4F16F9E0 /* Source.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9D89BAA7E3A670A01BD5F055650481 /* Source.swift */; };
+		25F8B70317F6F287D6092BD4B2FE0B34 /* CLLocation+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCDA3AF5584277BC5BAEA761CAE1714 /* CLLocation+Extensions.swift */; };
+		28ECFF81377431686F8F6EC0ED747018 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F58F4F4101251E84606A47C2BBBFA897 /* UIKit.framework */; };
+		2A6243914F2EB0715258F3976A85A3B4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6C39A7CE48CA109856197B1D40A62E4 /* Foundation.framework */; };
+		2C347167B7B5A220481FA1899A69A27A /* ConstraintGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CFB8273094DFEDB5CE73A3FC287911 /* ConstraintGroup.swift */; };
+		2E7C2BCE8BA9E3C6FA5007CD258E1E5F /* Pods-360iDev AR Navigation-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 46393ED138A2D1657745BED63F254B25 /* Pods-360iDev AR Navigation-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3120E4B16B04536386E4092AD13CA13F /* Pods-360iDev AR Navigation-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E2C6D210FF2DE53A1FEABA205A7361D /* Pods-360iDev AR Navigation-dummy.m */; };
+		313A0204CB675029D50A8EB7E4788256 /* CGPoint+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37CD59A8D5B9570D2117B302785310F5 /* CGPoint+Extensions.swift */; };
+		31A4ABCC2B72400DE3C7D3A60CE5C071 /* ARCL-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 77D2A7828165E9546837FB27E111FED5 /* ARCL-dummy.m */; };
+		32ADB348BDDEE0B27ED4C125694D6D02 /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFC061C40E7E63511815A274ADC3A1C /* Resource.swift */; };
+		339325FBE0064ACC45BBD33ADAA3511B /* SceneLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199243B6DD0AAA4724B1FE3E2390C98D /* SceneLocationView.swift */; };
+		34F39C271054D560B43F8990372592A9 /* LayoutGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = B938116B608F6A8FC8BE38361A0DB396 /* LayoutGuide.swift */; };
+		36A814BB8A755D68D5E3D96C4EAADB6E /* ImageDrawing.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33B71BB1E78EA4952BFA7EF07974DED /* ImageDrawing.swift */; };
+		375BDBC3E905D2E7D00975B4BCE11C02 /* SceneLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2F76EC97A50910811478574AF35C22 /* SceneLocationManager.swift */; };
+		3896AA21EC5D3EB7B522FCC66CAE2D69 /* ImageDownloaderDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B41BF5BACF5387503F3830F7D2605A9 /* ImageDownloaderDelegate.swift */; };
+		3C1DFF8C213664BDB15F04ABA7FE4176 /* GIFAnimatedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05372F5119704F87BD6A9CD77FBD712D /* GIFAnimatedImage.swift */; };
+		3EBA483E87C18A32151CE08617F0E00C /* KingfisherError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E155293DB05D5391E7C52CC79DB80D /* KingfisherError.swift */; };
+		4547D2497788CEF8DB3CE88A9E724266 /* ImagePrefetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F5B61FAF932A8AF003AFCB91ADC62A /* ImagePrefetcher.swift */; };
+		4A21EEC2E3010B0FCFABEB0456794135 /* SceneLocationEstimate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF8B47F8D435A78D014C30B8E6CF021 /* SceneLocationEstimate.swift */; };
+		4F5E0DC4752A4F8AED457D83141D1264 /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F7D4EDE68A1C65306DFCA80128EABE /* Box.swift */; };
+		4F90D9C85E84B6CA5FBD593BC29989F1 /* LayoutGuideProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E41A91678F6959E220F997829640611 /* LayoutGuideProxy.swift */; };
+		4FC97E9A19E5B31EC05F4F1A92E7AAD6 /* Edge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C78E8431DC2C0822163064D0B18F97 /* Edge.swift */; };
+		504BD19E5B253ADFABCCDA92524584BF /* Align.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6544D7E555FF42E602C1F0709C1D7086 /* Align.swift */; };
+		5453E8CB1C9C9E5D881DE6333DAB441E /* SCNNode+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30163376848464481BA6470FE997C86 /* SCNNode+Extensions.swift */; };
+		55683C80A15ADB61A43D85BFC22B57B2 /* Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA346622314D1371BC2CAD457F410900 /* Size.swift */; };
+		5B2C4CD6191E9E17463DF4DF3E5169E8 /* ImageModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30CCA3BC73DE90F57438DDB19DD50F6 /* ImageModifier.swift */; };
+		5C7AE657DE96861F05DAA7B445C5A28C /* Coefficients.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97CBEAA7A0C14C017BC479CEACCED287 /* Coefficients.swift */; };
+		5D4759FF7D34320BC1BFE3171BD83250 /* Kingfisher.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D9B4C7A34C69278F16873FAA8ADA9AA /* Kingfisher.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5D8B461677B082D9B12243AF68D7D329 /* RequestModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE8A89F1A178DBEAAD88805F54B4477 /* RequestModifier.swift */; };
+		5FAD8CAA06794CE892404AD9C408DF19 /* ImageProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0711B8391043259D27B2E0B05B7AAED6 /* ImageProcessor.swift */; };
+		6202AA73EF7A71FD9F99113AC779CB06 /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE1CCF54BDA8DE657A77C53B7EE52AB /* Point.swift */; };
+		64EC99CAEF7D16187DB1EC49794DAF70 /* Cartography-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A17CABD81788DFF725E9790255279289 /* Cartography-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		67776A8ED6E3B931649AD03090E61BBC /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8C01FC1DA89E35E02AFC68ABE9A3F36 /* Accelerate.framework */; };
+		696DE0303F71171A3E4A9C4258F0A5D5 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6984B6BC7615493E57621669EA87AD /* Image.swift */; };
+		6B3C32A5B5296C6B58EEADA1330717EB /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B475B75F5B3F14CBD5967168293E752 /* CFNetwork.framework */; };
+		6B942D8BC61FD7F7E363FA59C4BB63FD /* Priority.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620ACBC8C077AC0F1515A6BAE15ED97C /* Priority.swift */; };
+		6C2C8C03F6496EF5C656414D24BF3CF2 /* LocationAnnotationNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B76B727A8DBA52139F6FB02D84CBED /* LocationAnnotationNode.swift */; };
+		6D4D1EE91658CEE1390159F015320D55 /* ImageDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC918430BFBBEB11BDB8757C7A37517D /* ImageDataProvider.swift */; };
+		788415EEFA68D8E3958A1CAB215F43EB /* ARCL-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B90CF28F2ABB9C4E3422C34F6717EFF1 /* ARCL-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		78A4C2A82BDC1FB6DE7DBCBED85A8B63 /* AutoresizingMaskLayoutProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25958881774F18AEE334A46ADB3A3535 /* AutoresizingMaskLayoutProxy.swift */; };
+		78ACC1F12406F3762F882273E421AD93 /* AuthenticationChallengeResponsable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3206D2489F58029DDC7ED3FDDA1001C /* AuthenticationChallengeResponsable.swift */; };
+		7954A2E2DFB0092C64C9E223B7A4D744 /* ImageProgressive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF7AD6F106C7E52FE0D7DE9C9418A6E /* ImageProgressive.swift */; };
+		79E50736E21BB37E650AAFA59D940B90 /* FormatIndicatedCacheSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492346FFF717277D47B4C9B858A4113C /* FormatIndicatedCacheSerializer.swift */; };
+		7A55B0BE93922D01082931F8C242A226 /* SizeExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4001170F7E045FCB3364026663F4C423 /* SizeExtensions.swift */; };
+		7CB51C5EE5EB410D843BE8EA48779F71 /* ImageDataProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8F18FCD92C49172C6E9B1F066BD3C6 /* ImageDataProcessor.swift */; };
+		7DF6286BF0B2C0A02498CA9D22D9FD45 /* Kingfisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C667B2F4F7EA20C090951579A99E34E /* Kingfisher.swift */; };
+		7FBBD2E699FC45EFE36A67B1DFE6818E /* ViewProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B4EDDEB8B5C314D2C010B22101D402 /* ViewProxy.swift */; };
+		82D520695DF2A4B845AB64556F74D182 /* SceneKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FA5BD35BE4015F301DB743D6477BEF5 /* SceneKit.framework */; };
+		83F252A836C0DECD4A2DB3FD1F28E31A /* RedirectHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99FA93CE03ED86B93BECF3F9274F224D /* RedirectHandler.swift */; };
+		8538DA93E20F89D2DAB447709057427B /* Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3430C72A8397873BB2A63DE50B5AAFF7 /* Delegate.swift */; };
+		85B7396BB1BC6F75ED1FA56E0388CE2D /* PolylineNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933F366466FC412895A7087132FF866C /* PolylineNode.swift */; };
+		8CAC09A49010981835D986ECF3F144C8 /* Expression.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F2B03A73B5EAAFD23E192FC4002EFD /* Expression.swift */; };
+		96412009478E0C34729460474918272C /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938E3E0464CC1B8D2082D380446D729D /* Extensions.swift */; };
+		9C4520A980B6F0A08524DA6AE43FCC0D /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DA760DD571662488AA46D97D4E51E5 /* LocationManager.swift */; };
+		9FDCC7A5B398F92EE01CDB10A2CA03DC /* Distribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A09FB2BB550D88C1D3CCFF2DA04A02D /* Distribute.swift */; };
+		A01D0E20E670C29E4F36C0EAB9C96D8A /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992F8B0AF5F97B5A0FA3F9A3169F0CE7 /* Storage.swift */; };
+		A3765576E13E2188F1C8AD16104360A8 /* MemoryStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9799FADBF43E2EEE746C3F72BAB8E8 /* MemoryStorage.swift */; };
+		A730A1B971E33622C9D4488329356CF6 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E20E36A0DB82EEDC80C75CBFB54E1521 /* CoreLocation.framework */; };
+		AC31ABEB2D79702FFF36FB01F7157DDA /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4EB7B3C1F6F38846080C5493A5DEEBC /* ImageDownloader.swift */; };
+		AC3285CF7CFB61E0ABE4048FE5BCD4ED /* Dimension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E90AC3597B5CE6BC3B13A4516DF285 /* Dimension.swift */; };
+		AC5C12FAEE0412375C04322F39CAEEDD /* Compound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADDD60521D3CFF64BA518E6073521AF /* Compound.swift */; };
+		ACB9D36043B85C46D0C94266E7F1DBA2 /* UIButton+Kingfisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D900606A7303FEF2A20FD68894056A1 /* UIButton+Kingfisher.swift */; };
+		ADEA1883A271AAEBB15FEAE77F7EFB6C /* KingfisherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F038CE50E87908CE03EBD90F116DA3CD /* KingfisherManager.swift */; };
+		B0E9E870B0A6E278B2840B1469514912 /* KingfisherOptionsInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE5A4DE1FE8C3E9B08C645E914845A8 /* KingfisherOptionsInfo.swift */; };
+		B22BBA186319E555F033AD9CD2928257 /* Context.swift in Sources */ = {isa = PBXBuildFile; fileRef = 822B754E860011E19A16FAC1B36A5301 /* Context.swift */; };
+		B42B645F159B6B547D25C27C4627E544 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6C39A7CE48CA109856197B1D40A62E4 /* Foundation.framework */; };
+		B65CA3061DEC6AE73543D7F7AC048DD6 /* SceneLocationView+ARSCNViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD3CEA503BF8F5DBB03AB4F95E13871 /* SceneLocationView+ARSCNViewDelegate.swift */; };
+		BEBCF76D3E9834C4DEC3288CF380734E /* LayoutSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75DD0C0F367FB63F13BE01E92391749 /* LayoutSupport.swift */; };
+		C000E10FB1EC09133D66D8E537F3FEFA /* DiskStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C240FFF50930B6068F7839B77CD203D /* DiskStorage.swift */; };
+		C21EB8249C652ED720BDDF0AF3A542CB /* String+MD5.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A2DD62D5382B7F2CAC36287B18956E /* String+MD5.swift */; };
+		C57309C3611CBE6E9C3120B8115A574B /* Runtime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528D885D2FA1752496AF1EFB396771FE /* Runtime.swift */; };
+		C7B67CE21E8F7C0B6608ADC8818E4B45 /* ARKit_CoreLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B03CFF7F0AA90EA8B4434FFDFEE600 /* ARKit_CoreLocation.swift */; };
+		C911AA16E783670DCE1D6700E46543EE /* Constraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67739248F4BF5A8F12AA4428327BFF24 /* Constraint.swift */; };
+		C9827E4A928F57DDE1A4239F733F6404 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B8DF7977220773898793BA832BBFBE /* View.swift */; };
+		CC6CBD6D09F3487C8119671F0709E8A6 /* Deprecated.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40E409DF5E20097FD9C45DEDA87CD1D /* Deprecated.swift */; };
+		CCEB2B8D3403F249795613E1C3A077FE /* FloatingPoint+Radians.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B9986A98FFABD7F008F79795A191486 /* FloatingPoint+Radians.swift */; };
+		CE09ED6A621D2A33CD07586E0F999AA1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6C39A7CE48CA109856197B1D40A62E4 /* Foundation.framework */; };
+		D496217CC474887D11037655BE63A40F /* LayoutSupportProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = A873FD70F85E5747B0277AE9DB1548A9 /* LayoutSupportProxy.swift */; };
+		DAF9A65290ECDD42CC76DF369C0E78BA /* Indicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31443E5408029358302B9B6D89BE354F /* Indicator.swift */; };
+		DB00315A4C55F26CFBC7BB50CD637B63 /* LocationNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE28F3D12D060155B2BEBE31350FFCC /* LocationNode.swift */; };
+		DD309B2D0FC16DC15307A917449C4A7F /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02451BE1D9198855CF256AA48FC5793 /* SessionDelegate.swift */; };
+		DD4AB122129B2AB0EC57C86EBC0F1A4D /* ScalingScheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B26D6D90FC8EC5A55BA6F4CB804AF2 /* ScalingScheme.swift */; };
+		DE4D1D9AC817865FCCD8DBD7B773D59A /* SceneLocationViewEstimateDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABED31836AB45C285CAB086E33732467 /* SceneLocationViewEstimateDelegate.swift */; };
+		E1BB795892DE6F64D5F4DFFB132A5E79 /* SCNVector3+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCF9534323EE11870E0F72B40C9A518 /* SCNVector3+Extensions.swift */; };
+		E24660514D4232A0A95D8464FC13A48B /* Property.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781BAB3D2B719BDB68EE993C21A237D5 /* Property.swift */; };
+		E453BB8128EF0219CC03F1C2535F627A /* Cartography-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FDB7880AE92096075A1E90BEAC4E0F23 /* Cartography-dummy.m */; };
+		EFE26B035C606EF63FAB39B8BBB12324 /* LayoutItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 197C9D15464036FDC3E76E57FC36E530 /* LayoutItem.swift */; };
+		F51B22D93BB90CB5C91FD1FE71B7D987 /* ImageView+Kingfisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A27AC4C412E5308852AE8AAA736DDC /* ImageView+Kingfisher.swift */; };
+		F6DDC4DD1F338C942261B19726F2A152 /* AnimatedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68164A51E9D772A50FAD21FC407A6830 /* AnimatedImageView.swift */; };
+		F92571315920B12CE657B195DA15ECD6 /* LayoutProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = D594A97D10011DFDDEDF46DD542E92A8 /* LayoutProxy.swift */; };
+		F92F8C526C438698D0A793ECFF41B2D9 /* CallbackQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = F495715984EEB27E4152D2B3B52FDCAB /* CallbackQueue.swift */; };
+		F9C03E29F41DB4ED5901C128D165DC56 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6C39A7CE48CA109856197B1D40A62E4 /* Foundation.framework */; };
+		FE438315281F1D39812C816112E7F55C /* BaseTypes+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38296619BE339328498D5FE66F056A09 /* BaseTypes+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		6062A585E32D70128CB7426B4A9B3CB3 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = BB32E97F940371D391F6B8FB4F24AC15;
-			remoteInfo = ARCL;
-		};
-		8F397F0327F8DD3BD8B44A0D5955EE63 /* PBXContainerItemProxy */ = {
+		1EE32B5A5CA0B933E4A2B429BE314423 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 8FBDBAAAB58D03FB5BB194A7F5231422;
 			remoteInfo = Cartography;
 		};
+		82B1EB4B83AE8EED55942AB592189D59 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BB32E97F940371D391F6B8FB4F24AC15;
+			remoteInfo = ARCL;
+		};
+		A848D2873A40CB772727392F1F4A9CF8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E8022D22FAA6690B5E1C379C1BCE1491;
+			remoteInfo = Kingfisher;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0208E6B758ACA12D7295A11B2A37189E /* ScalingScheme.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ScalingScheme.swift; path = "Sources/ARKit-CoreLocation/Nodes/ScalingScheme.swift"; sourceTree = "<group>"; };
-		02B325E166CF7A11299006528F24ABCD /* ARCL-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ARCL-prefix.pch"; sourceTree = "<group>"; };
-		03650857F6BF7615C14336DF83E01B20 /* View.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = View.swift; path = Cartography/View.swift; sourceTree = "<group>"; };
-		04E785B446831503469B054B2806D5C5 /* PolylineNode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PolylineNode.swift; path = "Sources/ARKit-CoreLocation/Nodes/PolylineNode.swift"; sourceTree = "<group>"; };
-		0832BBB74852AF9A15D378B6CBE117EF /* Constrain.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constrain.swift; path = Cartography/Constrain.swift; sourceTree = "<group>"; };
-		087E265DC27AEA4137D6D53B10C49588 /* CLLocation+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CLLocation+Extensions.swift"; path = "Sources/ARKit-CoreLocation/Extensions/CLLocation+Extensions.swift"; sourceTree = "<group>"; };
-		0BFCA080FF4D6698A5C39295675C1AEF /* SceneLocationViewEstimateDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SceneLocationViewEstimateDelegate.swift; path = "Sources/ARKit-CoreLocation/SceneLocationViewEstimateDelegate.swift"; sourceTree = "<group>"; };
-		10B5BE169F5436BC802CFE9CE97607E3 /* LayoutGuideProxy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutGuideProxy.swift; path = Cartography/LayoutGuideProxy.swift; sourceTree = "<group>"; };
-		1286BD9CC3F1431DD7E6D631FBB111F5 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/MapKit.framework; sourceTree = DEVELOPER_DIR; };
-		1A436911AF48B1F965E1BB873BCA83D9 /* Edges.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Edges.swift; path = Cartography/Edges.swift; sourceTree = "<group>"; };
-		1CDDA114AE7403AA7327B70DDAF130FB /* SceneLocationEstimate+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SceneLocationEstimate+Extensions.swift"; path = "Sources/ARKit-CoreLocation/Location Manager/SceneLocationEstimate+Extensions.swift"; sourceTree = "<group>"; };
-		2020E8696253356E82703E589CB9F34A /* LayoutItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutItem.swift; path = Cartography/LayoutItem.swift; sourceTree = "<group>"; };
-		210B20FC0E7D53FBCB5DAE47E472554B /* Compound.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Compound.swift; path = Cartography/Compound.swift; sourceTree = "<group>"; };
-		2209767DB14E0AC37101C25C08774B99 /* LocationNode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LocationNode.swift; path = "Sources/ARKit-CoreLocation/Nodes/LocationNode.swift"; sourceTree = "<group>"; };
-		248A9D7555CD82ED8870478297AD4EC0 /* ARCL-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ARCL-dummy.m"; sourceTree = "<group>"; };
-		29D125C3865458FBC9DEEA7881F920B6 /* Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = Cartography/Extensions.swift; sourceTree = "<group>"; };
-		3676DD2B57462AA85F9388A50A875586 /* SceneLocationView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SceneLocationView.swift; path = "Sources/ARKit-CoreLocation/SceneLocationView.swift"; sourceTree = "<group>"; };
-		3B2A7D64CF0307978635BB0B3CB757B4 /* Dimension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Dimension.swift; path = Cartography/Dimension.swift; sourceTree = "<group>"; };
+		0075B3792F33F292E1C003A8C73DEBE6 /* Edges.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Edges.swift; path = Cartography/Edges.swift; sourceTree = "<group>"; };
+		04C78E8431DC2C0822163064D0B18F97 /* Edge.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Edge.swift; path = Cartography/Edge.swift; sourceTree = "<group>"; };
+		05372F5119704F87BD6A9CD77FBD712D /* GIFAnimatedImage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GIFAnimatedImage.swift; path = Sources/Image/GIFAnimatedImage.swift; sourceTree = "<group>"; };
+		0711B8391043259D27B2E0B05B7AAED6 /* ImageProcessor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageProcessor.swift; path = Sources/Image/ImageProcessor.swift; sourceTree = "<group>"; };
+		07E155293DB05D5391E7C52CC79DB80D /* KingfisherError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KingfisherError.swift; path = Sources/General/KingfisherError.swift; sourceTree = "<group>"; };
+		0ADDD60521D3CFF64BA518E6073521AF /* Compound.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Compound.swift; path = Cartography/Compound.swift; sourceTree = "<group>"; };
+		0B1FB5CDD404177C5FCECE7D838AAB7B /* SceneLocationEstimate+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SceneLocationEstimate+Extensions.swift"; path = "Sources/ARKit-CoreLocation/Location Manager/SceneLocationEstimate+Extensions.swift"; sourceTree = "<group>"; };
+		0C877E8E340AA62E06EA53F31288414B /* Kingfisher-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Kingfisher-Info.plist"; sourceTree = "<group>"; };
+		197C9D15464036FDC3E76E57FC36E530 /* LayoutItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutItem.swift; path = Cartography/LayoutItem.swift; sourceTree = "<group>"; };
+		199243B6DD0AAA4724B1FE3E2390C98D /* SceneLocationView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SceneLocationView.swift; path = "Sources/ARKit-CoreLocation/SceneLocationView.swift"; sourceTree = "<group>"; };
+		1A09FB2BB550D88C1D3CCFF2DA04A02D /* Distribute.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Distribute.swift; path = Cartography/Distribute.swift; sourceTree = "<group>"; };
+		1F2224431A1502FAAA1A60D5E09B0D72 /* ARCL-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ARCL-Info.plist"; sourceTree = "<group>"; };
+		25958881774F18AEE334A46ADB3A3535 /* AutoresizingMaskLayoutProxy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AutoresizingMaskLayoutProxy.swift; path = Cartography/AutoresizingMaskLayoutProxy.swift; sourceTree = "<group>"; };
+		27F7D4EDE68A1C65306DFCA80128EABE /* Box.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Box.swift; path = Sources/Utility/Box.swift; sourceTree = "<group>"; };
+		29CFB8273094DFEDB5CE73A3FC287911 /* ConstraintGroup.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintGroup.swift; path = Cartography/ConstraintGroup.swift; sourceTree = "<group>"; };
+		2BF7AD6F106C7E52FE0D7DE9C9418A6E /* ImageProgressive.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageProgressive.swift; path = Sources/Image/ImageProgressive.swift; sourceTree = "<group>"; };
+		2FF8B47F8D435A78D014C30B8E6CF021 /* SceneLocationEstimate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SceneLocationEstimate.swift; path = "Sources/ARKit-CoreLocation/Location Manager/SceneLocationEstimate.swift"; sourceTree = "<group>"; };
+		31443E5408029358302B9B6D89BE354F /* Indicator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Indicator.swift; path = Sources/Views/Indicator.swift; sourceTree = "<group>"; };
+		335CDC51A7C9FF618E4A0C1D5278F1A2 /* Kingfisher-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Kingfisher-dummy.m"; sourceTree = "<group>"; };
+		3430C72A8397873BB2A63DE50B5AAFF7 /* Delegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Delegate.swift; path = Sources/Utility/Delegate.swift; sourceTree = "<group>"; };
+		37CD59A8D5B9570D2117B302785310F5 /* CGPoint+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CGPoint+Extensions.swift"; path = "Sources/ARKit-CoreLocation/Extensions/CGPoint+Extensions.swift"; sourceTree = "<group>"; };
+		38296619BE339328498D5FE66F056A09 /* BaseTypes+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "BaseTypes+Extensions.swift"; path = "Sources/ARKit-CoreLocation/Extensions/BaseTypes+Extensions.swift"; sourceTree = "<group>"; };
+		4001170F7E045FCB3364026663F4C423 /* SizeExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SizeExtensions.swift; path = Sources/Utility/SizeExtensions.swift; sourceTree = "<group>"; };
+		40960619E60F95364DF199F5A8BD2AA2 /* ARCL.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ARCL.xcconfig; sourceTree = "<group>"; };
+		4372AE4494CBE836919C0AE4BEF28F8D /* ImageFormat.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageFormat.swift; path = Sources/Image/ImageFormat.swift; sourceTree = "<group>"; };
 		46393ED138A2D1657745BED63F254B25 /* Pods-360iDev AR Navigation-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-360iDev AR Navigation-umbrella.h"; sourceTree = "<group>"; };
-		4C125F290EEBFAEA139A1E3157ECB79D /* Cartography-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Cartography-umbrella.h"; sourceTree = "<group>"; };
-		550F2706777F2F4E9E9EF473BA76E071 /* Cartography.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Cartography.xcconfig; sourceTree = "<group>"; };
-		58B346BFF5238D1E2C045657ABFE6647 /* LocationManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LocationManager.swift; path = "Sources/ARKit-CoreLocation/Location Manager/LocationManager.swift"; sourceTree = "<group>"; };
+		492346FFF717277D47B4C9B858A4113C /* FormatIndicatedCacheSerializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FormatIndicatedCacheSerializer.swift; path = Sources/Cache/FormatIndicatedCacheSerializer.swift; sourceTree = "<group>"; };
+		49A24D4A6BDDF7C0DF6317F09BEDA247 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/MapKit.framework; sourceTree = DEVELOPER_DIR; };
+		4B475B75F5B3F14CBD5967168293E752 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
+		4DE8A89F1A178DBEAAD88805F54B4477 /* RequestModifier.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestModifier.swift; path = Sources/Networking/RequestModifier.swift; sourceTree = "<group>"; };
+		528D885D2FA1752496AF1EFB396771FE /* Runtime.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Runtime.swift; path = Sources/Utility/Runtime.swift; sourceTree = "<group>"; };
+		54A27AC4C412E5308852AE8AAA736DDC /* ImageView+Kingfisher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ImageView+Kingfisher.swift"; path = "Sources/Extensions/ImageView+Kingfisher.swift"; sourceTree = "<group>"; };
+		55602B4072752CCA11B37BCFEAE86910 /* ARCL-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ARCL-prefix.pch"; sourceTree = "<group>"; };
+		58BFCCF8255DBCAC7A0013B0B5AE4013 /* Kingfisher.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Kingfisher.modulemap; sourceTree = "<group>"; };
+		59E612F4B5CD60C916155CA8B32819B6 /* Cartography-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Cartography-Info.plist"; sourceTree = "<group>"; };
+		5B41BF5BACF5387503F3830F7D2605A9 /* ImageDownloaderDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageDownloaderDelegate.swift; path = Sources/Networking/ImageDownloaderDelegate.swift; sourceTree = "<group>"; };
+		5C240FFF50930B6068F7839B77CD203D /* DiskStorage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DiskStorage.swift; path = Sources/Cache/DiskStorage.swift; sourceTree = "<group>"; };
+		5C5A4BD527C094DFE9E1CE0B99718B1C /* SessionDataTask.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionDataTask.swift; path = Sources/Networking/SessionDataTask.swift; sourceTree = "<group>"; };
+		5C667B2F4F7EA20C090951579A99E34E /* Kingfisher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Kingfisher.swift; path = Sources/General/Kingfisher.swift; sourceTree = "<group>"; };
 		5DEDB65EFD40099ADD720C7A97510240 /* Cartography.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Cartography.framework; path = Cartography.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6636001AA636C0F083474D8BCAFE28E7 /* ARCL.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ARCL.xcconfig; sourceTree = "<group>"; };
+		620ACBC8C077AC0F1515A6BAE15ED97C /* Priority.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Priority.swift; path = Cartography/Priority.swift; sourceTree = "<group>"; };
+		6544D7E555FF42E602C1F0709C1D7086 /* Align.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Align.swift; path = Cartography/Align.swift; sourceTree = "<group>"; };
 		67093230B4C786AA68531BC6F8267236 /* Pods-360iDev AR Navigation-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-360iDev AR Navigation-Info.plist"; sourceTree = "<group>"; };
-		6B29F001C0930623FCE4ABB5DD32E60D /* Cartography-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Cartography-dummy.m"; sourceTree = "<group>"; };
-		6DEAFC03A39F339781BAB0A20FE23CC2 /* Constraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constraint.swift; path = Cartography/Constraint.swift; sourceTree = "<group>"; };
-		6FFAF595CEAC7C3E149C252FB41CAD49 /* ARCL-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ARCL-Info.plist"; sourceTree = "<group>"; };
-		72B3B388F4B4C508CD05DC22C64F5B89 /* SCNNode+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SCNNode+Extensions.swift"; path = "Sources/ARKit-CoreLocation/Extensions/SCNNode+Extensions.swift"; sourceTree = "<group>"; };
-		7343D48AF6C47C0F83F9725ACCFD65D4 /* ConstraintGroup.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintGroup.swift; path = Cartography/ConstraintGroup.swift; sourceTree = "<group>"; };
-		74CC88B92B0A99F954572B48C4F42F70 /* Cartography-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Cartography-prefix.pch"; sourceTree = "<group>"; };
+		67739248F4BF5A8F12AA4428327BFF24 /* Constraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constraint.swift; path = Cartography/Constraint.swift; sourceTree = "<group>"; };
+		68164A51E9D772A50FAD21FC407A6830 /* AnimatedImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnimatedImageView.swift; path = Sources/Views/AnimatedImageView.swift; sourceTree = "<group>"; };
+		6B9986A98FFABD7F008F79795A191486 /* FloatingPoint+Radians.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "FloatingPoint+Radians.swift"; path = "Sources/ARKit-CoreLocation/Extensions/FloatingPoint+Radians.swift"; sourceTree = "<group>"; };
+		6E41A91678F6959E220F997829640611 /* LayoutGuideProxy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutGuideProxy.swift; path = Cartography/LayoutGuideProxy.swift; sourceTree = "<group>"; };
+		77D2A7828165E9546837FB27E111FED5 /* ARCL-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ARCL-dummy.m"; sourceTree = "<group>"; };
+		781BAB3D2B719BDB68EE993C21A237D5 /* Property.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Property.swift; path = Cartography/Property.swift; sourceTree = "<group>"; };
+		783017A78B69187EBFD2554056197B2E /* LayoutProxy+TypeErasure.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "LayoutProxy+TypeErasure.swift"; path = "Cartography/LayoutProxy+TypeErasure.swift"; sourceTree = "<group>"; };
+		7D99E0DC2847BD6F97401742D3E8EEC8 /* Placeholder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Placeholder.swift; path = Sources/Image/Placeholder.swift; sourceTree = "<group>"; };
+		7F5C2A766676187E711B1FD986AA4A12 /* ImageCache.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageCache.swift; path = Sources/Cache/ImageCache.swift; sourceTree = "<group>"; };
+		7FCF9534323EE11870E0F72B40C9A518 /* SCNVector3+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SCNVector3+Extensions.swift"; path = "Sources/ARKit-CoreLocation/Extensions/SCNVector3+Extensions.swift"; sourceTree = "<group>"; };
 		804B65DF1348FB94EC750B3611416465 /* Pods-360iDev AR Navigation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-360iDev AR Navigation.debug.xcconfig"; sourceTree = "<group>"; };
-		80899963A1F1C4834BCD04F790C17D18 /* Priority.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Priority.swift; path = Cartography/Priority.swift; sourceTree = "<group>"; };
-		81DA3EF765136A7F33FE4EF26AE04ACF /* Expression.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Expression.swift; path = Cartography/Expression.swift; sourceTree = "<group>"; };
+		822B754E860011E19A16FAC1B36A5301 /* Context.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Context.swift; path = Cartography/Context.swift; sourceTree = "<group>"; };
 		82C07B65B249825FD5AC0986ADAD2D96 /* Pods-360iDev AR Navigation-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-360iDev AR Navigation-acknowledgements.markdown"; sourceTree = "<group>"; };
 		86B3B602990FB6F071764E59311C6DD4 /* Pods-360iDev AR Navigation.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-360iDev AR Navigation.modulemap"; sourceTree = "<group>"; };
-		8AA60DA4C5B8121C833081B76352E2AF /* AutoresizingMaskLayoutProxy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AutoresizingMaskLayoutProxy.swift; path = Cartography/AutoresizingMaskLayoutProxy.swift; sourceTree = "<group>"; };
+		88B03CFF7F0AA90EA8B4434FFDFEE600 /* ARKit_CoreLocation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ARKit_CoreLocation.swift; path = "Sources/ARKit-CoreLocation/ARKit_CoreLocation.swift"; sourceTree = "<group>"; };
+		8D900606A7303FEF2A20FD68894056A1 /* UIButton+Kingfisher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIButton+Kingfisher.swift"; path = "Sources/Extensions/UIButton+Kingfisher.swift"; sourceTree = "<group>"; };
 		8E2C6D210FF2DE53A1FEABA205A7361D /* Pods-360iDev AR Navigation-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-360iDev AR Navigation-dummy.m"; sourceTree = "<group>"; };
-		90E91DF3DD80E18E4420D8BA5480A48B /* SceneKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SceneKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/SceneKit.framework; sourceTree = DEVELOPER_DIR; };
-		9198131727667F5A36AEE40099328680 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		929EE44ECF77E6218988AB1893A270B8 /* Coefficients.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Coefficients.swift; path = Cartography/Coefficients.swift; sourceTree = "<group>"; };
-		92B90C3E11C14AD5659B5CEB6475C315 /* LayoutSupportProxy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutSupportProxy.swift; path = Cartography/LayoutSupportProxy.swift; sourceTree = "<group>"; };
-		9A16E3151F69851E76129D8B71FA24F4 /* Size.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Size.swift; path = Cartography/Size.swift; sourceTree = "<group>"; };
+		8E8F18FCD92C49172C6E9B1F066BD3C6 /* ImageDataProcessor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageDataProcessor.swift; path = Sources/Networking/ImageDataProcessor.swift; sourceTree = "<group>"; };
+		8FA5BD35BE4015F301DB743D6477BEF5 /* SceneKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SceneKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/SceneKit.framework; sourceTree = DEVELOPER_DIR; };
+		933F366466FC412895A7087132FF866C /* PolylineNode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PolylineNode.swift; path = "Sources/ARKit-CoreLocation/Nodes/PolylineNode.swift"; sourceTree = "<group>"; };
+		938E3E0464CC1B8D2082D380446D729D /* Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = Cartography/Extensions.swift; sourceTree = "<group>"; };
+		93EF5CD1EA7142F44D514D441129905B /* Cartography.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Cartography.xcconfig; sourceTree = "<group>"; };
+		96B76B727A8DBA52139F6FB02D84CBED /* LocationAnnotationNode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LocationAnnotationNode.swift; path = "Sources/ARKit-CoreLocation/Nodes/LocationAnnotationNode.swift"; sourceTree = "<group>"; };
+		97B4EDDEB8B5C314D2C010B22101D402 /* ViewProxy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ViewProxy.swift; path = Cartography/ViewProxy.swift; sourceTree = "<group>"; };
+		97CBEAA7A0C14C017BC479CEACCED287 /* Coefficients.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Coefficients.swift; path = Cartography/Coefficients.swift; sourceTree = "<group>"; };
+		98B26D6D90FC8EC5A55BA6F4CB804AF2 /* ScalingScheme.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ScalingScheme.swift; path = "Sources/ARKit-CoreLocation/Nodes/ScalingScheme.swift"; sourceTree = "<group>"; };
+		992F8B0AF5F97B5A0FA3F9A3169F0CE7 /* Storage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Storage.swift; path = Sources/Cache/Storage.swift; sourceTree = "<group>"; };
+		99FA93CE03ED86B93BECF3F9274F224D /* RedirectHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RedirectHandler.swift; path = Sources/Networking/RedirectHandler.swift; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9E6B5FB1335564BA12B8F5ECDCC83DFA /* SceneLocationView+ARSCNViewDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SceneLocationView+ARSCNViewDelegate.swift"; path = "Sources/ARKit-CoreLocation/SceneLocationView+ARSCNViewDelegate.swift"; sourceTree = "<group>"; };
+		9D9B4C7A34C69278F16873FAA8ADA9AA /* Kingfisher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Kingfisher.h; path = Sources/Kingfisher.h; sourceTree = "<group>"; };
+		9EF03D6636AB3C125D90BFEBFB59CDAE /* CacheSerializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CacheSerializer.swift; path = Sources/Cache/CacheSerializer.swift; sourceTree = "<group>"; };
+		A17CABD81788DFF725E9790255279289 /* Cartography-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Cartography-umbrella.h"; sourceTree = "<group>"; };
+		A1DA760DD571662488AA46D97D4E51E5 /* LocationManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LocationManager.swift; path = "Sources/ARKit-CoreLocation/Location Manager/LocationManager.swift"; sourceTree = "<group>"; };
+		A1E90AC3597B5CE6BC3B13A4516DF285 /* Dimension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Dimension.swift; path = Cartography/Dimension.swift; sourceTree = "<group>"; };
+		A2F2B03A73B5EAAFD23E192FC4002EFD /* Expression.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Expression.swift; path = Cartography/Expression.swift; sourceTree = "<group>"; };
+		A30CCA3BC73DE90F57438DDB19DD50F6 /* ImageModifier.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageModifier.swift; path = Sources/Networking/ImageModifier.swift; sourceTree = "<group>"; };
+		A40E409DF5E20097FD9C45DEDA87CD1D /* Deprecated.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Deprecated.swift; path = Sources/General/Deprecated.swift; sourceTree = "<group>"; };
+		A8016F45F8D66AF426486F5B24F68BFB /* ARCL.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ARCL.modulemap; sourceTree = "<group>"; };
+		A873FD70F85E5747B0277AE9DB1548A9 /* LayoutSupportProxy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutSupportProxy.swift; path = Cartography/LayoutSupportProxy.swift; sourceTree = "<group>"; };
+		ABED31836AB45C285CAB086E33732467 /* SceneLocationViewEstimateDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SceneLocationViewEstimateDelegate.swift; path = "Sources/ARKit-CoreLocation/SceneLocationViewEstimateDelegate.swift"; sourceTree = "<group>"; };
 		ACFC72802307647B93C8752F5F064CD2 /* Pods-360iDev AR Navigation-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-360iDev AR Navigation-acknowledgements.plist"; sourceTree = "<group>"; };
-		B14ACB533DF9562DD223E444BC3F9C59 /* BaseTypes+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "BaseTypes+Extensions.swift"; path = "Sources/ARKit-CoreLocation/Extensions/BaseTypes+Extensions.swift"; sourceTree = "<group>"; };
+		B18C60533C89F7AADA601A0BC56FB4A2 /* ImageTransition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageTransition.swift; path = Sources/Image/ImageTransition.swift; sourceTree = "<group>"; };
+		B345CBEBE5D39A434A4EAEBAACC30ACB /* Kingfisher.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Kingfisher.xcconfig; sourceTree = "<group>"; };
 		B4BB928031EEE69EE4264E63640C002A /* Pods-360iDev AR Navigation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-360iDev AR Navigation.release.xcconfig"; sourceTree = "<group>"; };
-		B8D579624B0D17FBE75BE123B841F869 /* LayoutProxy+TypeErasure.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "LayoutProxy+TypeErasure.swift"; path = "Cartography/LayoutProxy+TypeErasure.swift"; sourceTree = "<group>"; };
-		B8F68262B89347CDDC8C6DD6C599996D /* FloatingPoint+Radians.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "FloatingPoint+Radians.swift"; path = "Sources/ARKit-CoreLocation/Extensions/FloatingPoint+Radians.swift"; sourceTree = "<group>"; };
-		BC7E1FC8ADC3CEB8870ACB461670867D /* Property.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Property.swift; path = Cartography/Property.swift; sourceTree = "<group>"; };
-		BF32EB9338AB56A4F4A6A9C09D3994DB /* Point.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Point.swift; path = Cartography/Point.swift; sourceTree = "<group>"; };
-		C4D754A8C256E2607E72D83DD0AA874B /* ARKit_CoreLocation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ARKit_CoreLocation.swift; path = "Sources/ARKit-CoreLocation/ARKit_CoreLocation.swift"; sourceTree = "<group>"; };
-		C73D2D9E582DF84CCD337B259CCBFC52 /* LayoutProxy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutProxy.swift; path = Cartography/LayoutProxy.swift; sourceTree = "<group>"; };
-		C7A841D8590C80691A1BA389E39288CC /* SceneLocationManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SceneLocationManager.swift; path = "Sources/ARKit-CoreLocation/Location Manager/SceneLocationManager.swift"; sourceTree = "<group>"; };
+		B4EB7B3C1F6F38846080C5493A5DEEBC /* ImageDownloader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageDownloader.swift; path = Sources/Networking/ImageDownloader.swift; sourceTree = "<group>"; };
+		B90CF28F2ABB9C4E3422C34F6717EFF1 /* ARCL-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ARCL-umbrella.h"; sourceTree = "<group>"; };
+		B938116B608F6A8FC8BE38361A0DB396 /* LayoutGuide.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutGuide.swift; path = Cartography/LayoutGuide.swift; sourceTree = "<group>"; };
+		BD2F76EC97A50910811478574AF35C22 /* SceneLocationManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SceneLocationManager.swift; path = "Sources/ARKit-CoreLocation/Location Manager/SceneLocationManager.swift"; sourceTree = "<group>"; };
+		C3206D2489F58029DDC7ED3FDDA1001C /* AuthenticationChallengeResponsable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AuthenticationChallengeResponsable.swift; path = Sources/Networking/AuthenticationChallengeResponsable.swift; sourceTree = "<group>"; };
+		C33B71BB1E78EA4952BFA7EF07974DED /* ImageDrawing.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageDrawing.swift; path = Sources/Image/ImageDrawing.swift; sourceTree = "<group>"; };
+		C3F44C782D64D7EB20B61CE3844EBFAD /* Kingfisher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Kingfisher.framework; path = Kingfisher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4D06986700F853A913773F42F31E41D /* Cartography.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Cartography.modulemap; sourceTree = "<group>"; };
+		C627067441C1F80D6A961BCEBED77504 /* ExtensionHelpers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExtensionHelpers.swift; path = Sources/Utility/ExtensionHelpers.swift; sourceTree = "<group>"; };
+		C67DCCC5482F1E62ABB22BE908CA07E3 /* Filter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Filter.swift; path = Sources/Image/Filter.swift; sourceTree = "<group>"; };
+		C6C39A7CE48CA109856197B1D40A62E4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		C7ADEE321186A59406F16630332B9832 /* ARCL.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ARCL.framework; path = ARCL.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C8877F177B247F41002E887810675BFE /* ARCL.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ARCL.modulemap; sourceTree = "<group>"; };
+		C8C01FC1DA89E35E02AFC68ABE9A3F36 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Accelerate.framework; sourceTree = DEVELOPER_DIR; };
 		C9314C34F928D64D07447EA61624D009 /* Pods-360iDev AR Navigation-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-360iDev AR Navigation-frameworks.sh"; sourceTree = "<group>"; };
-		CE1C87DD65575F3BFF2A2EB472E5344D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		D0A622D4350CAA047E66C3292C653434 /* Cartography.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Cartography.modulemap; sourceTree = "<group>"; };
-		D87B549B046115056618E36AC5EB36B7 /* LocationAnnotationNode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LocationAnnotationNode.swift; path = "Sources/ARKit-CoreLocation/Nodes/LocationAnnotationNode.swift"; sourceTree = "<group>"; };
+		CC9D89BAA7E3A670A01BD5F055650481 /* Source.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Source.swift; path = Sources/General/ImageSource/Source.swift; sourceTree = "<group>"; };
+		CDCDEE9E8905BCF4382B0955267CF34A /* Kingfisher-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Kingfisher-umbrella.h"; sourceTree = "<group>"; };
+		CDE5A4DE1FE8C3E9B08C645E914845A8 /* KingfisherOptionsInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KingfisherOptionsInfo.swift; path = Sources/General/KingfisherOptionsInfo.swift; sourceTree = "<group>"; };
+		D0D27D6B922B2373A9BF059757083BFD /* Constrain.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constrain.swift; path = Cartography/Constrain.swift; sourceTree = "<group>"; };
+		D30163376848464481BA6470FE997C86 /* SCNNode+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SCNNode+Extensions.swift"; path = "Sources/ARKit-CoreLocation/Extensions/SCNNode+Extensions.swift"; sourceTree = "<group>"; };
+		D3B8DF7977220773898793BA832BBFBE /* View.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = View.swift; path = Cartography/View.swift; sourceTree = "<group>"; };
+		D594A97D10011DFDDEDF46DD542E92A8 /* LayoutProxy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutProxy.swift; path = Cartography/LayoutProxy.swift; sourceTree = "<group>"; };
+		D7A2DD62D5382B7F2CAC36287B18956E /* String+MD5.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+MD5.swift"; path = "Sources/Utility/String+MD5.swift"; sourceTree = "<group>"; };
 		D9B7F2C4B7D3F15CB3A60C2D644CE80F /* Pods_360iDev_AR_Navigation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_360iDev_AR_Navigation.framework; path = "Pods-360iDev AR Navigation.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		DA272986C62108D971D1681FF887203E /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/CoreLocation.framework; sourceTree = DEVELOPER_DIR; };
-		DA6AFA18D1A03E61A436420BE3ED63E2 /* LayoutGuide.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutGuide.swift; path = Cartography/LayoutGuide.swift; sourceTree = "<group>"; };
-		DD14BA8D21D7EA21D83C49CA046A936F /* LayoutSupport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutSupport.swift; path = Cartography/LayoutSupport.swift; sourceTree = "<group>"; };
-		DE89E168F2D412B74906CE8C43BE03B5 /* ViewProxy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ViewProxy.swift; path = Cartography/ViewProxy.swift; sourceTree = "<group>"; };
-		E84C93261C8C1E5303C82B63B70131A4 /* ARCL-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ARCL-umbrella.h"; sourceTree = "<group>"; };
-		EB1116C8AE24CCD6A8E0CCB12DF5060A /* Cartography-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Cartography-Info.plist"; sourceTree = "<group>"; };
-		F3B28AC2525DD51416EDD3F2680DE436 /* SceneLocationEstimate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SceneLocationEstimate.swift; path = "Sources/ARKit-CoreLocation/Location Manager/SceneLocationEstimate.swift"; sourceTree = "<group>"; };
-		F467D874651A8D955349E7680655003A /* Edge.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Edge.swift; path = Cartography/Edge.swift; sourceTree = "<group>"; };
-		F8A3EBE503B8C51E2BB27BA4EB61B4C1 /* SCNVector3+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SCNVector3+Extensions.swift"; path = "Sources/ARKit-CoreLocation/Extensions/SCNVector3+Extensions.swift"; sourceTree = "<group>"; };
-		F8B9F3647E8D61CB2C4D0ED0E9BB215C /* Distribute.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Distribute.swift; path = Cartography/Distribute.swift; sourceTree = "<group>"; };
-		F8C24F2F5F0928FAB9DD680C301D9A56 /* CGPoint+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CGPoint+Extensions.swift"; path = "Sources/ARKit-CoreLocation/Extensions/CGPoint+Extensions.swift"; sourceTree = "<group>"; };
-		FD23F23AD2D8F2BD4542AE47F8DE43DF /* Context.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Context.swift; path = Cartography/Context.swift; sourceTree = "<group>"; };
-		FD47C7CD1C0A25DBD9A8D11AC3277E16 /* Align.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Align.swift; path = Cartography/Align.swift; sourceTree = "<group>"; };
+		DA2DE8144360B6622F9869F6CFBEC18F /* Kingfisher-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Kingfisher-prefix.pch"; sourceTree = "<group>"; };
+		DBE28F3D12D060155B2BEBE31350FFCC /* LocationNode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LocationNode.swift; path = "Sources/ARKit-CoreLocation/Nodes/LocationNode.swift"; sourceTree = "<group>"; };
+		DCC11CC662F0417F635B21756DA845A4 /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Sources/Utility/Result.swift; sourceTree = "<group>"; };
+		DCCDA3AF5584277BC5BAEA761CAE1714 /* CLLocation+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CLLocation+Extensions.swift"; path = "Sources/ARKit-CoreLocation/Extensions/CLLocation+Extensions.swift"; sourceTree = "<group>"; };
+		DDE1CCF54BDA8DE657A77C53B7EE52AB /* Point.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Point.swift; path = Cartography/Point.swift; sourceTree = "<group>"; };
+		E02270AD942A65A15692D5B8EECE0AE1 /* Cartography-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Cartography-prefix.pch"; sourceTree = "<group>"; };
+		E20E36A0DB82EEDC80C75CBFB54E1521 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/CoreLocation.framework; sourceTree = DEVELOPER_DIR; };
+		EB6984B6BC7615493E57621669EA87AD /* Image.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Image.swift; path = Sources/Image/Image.swift; sourceTree = "<group>"; };
+		ECD3CEA503BF8F5DBB03AB4F95E13871 /* SceneLocationView+ARSCNViewDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SceneLocationView+ARSCNViewDelegate.swift"; path = "Sources/ARKit-CoreLocation/SceneLocationView+ARSCNViewDelegate.swift"; sourceTree = "<group>"; };
+		ED9799FADBF43E2EEE746C3F72BAB8E8 /* MemoryStorage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MemoryStorage.swift; path = Sources/Cache/MemoryStorage.swift; sourceTree = "<group>"; };
+		F02451BE1D9198855CF256AA48FC5793 /* SessionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionDelegate.swift; path = Sources/Networking/SessionDelegate.swift; sourceTree = "<group>"; };
+		F038CE50E87908CE03EBD90F116DA3CD /* KingfisherManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KingfisherManager.swift; path = Sources/General/KingfisherManager.swift; sourceTree = "<group>"; };
+		F2F5B61FAF932A8AF003AFCB91ADC62A /* ImagePrefetcher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImagePrefetcher.swift; path = Sources/Networking/ImagePrefetcher.swift; sourceTree = "<group>"; };
+		F495715984EEB27E4152D2B3B52FDCAB /* CallbackQueue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CallbackQueue.swift; path = Sources/Utility/CallbackQueue.swift; sourceTree = "<group>"; };
+		F58F4F4101251E84606A47C2BBBFA897 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		F75DD0C0F367FB63F13BE01E92391749 /* LayoutSupport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutSupport.swift; path = Cartography/LayoutSupport.swift; sourceTree = "<group>"; };
+		FA346622314D1371BC2CAD457F410900 /* Size.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Size.swift; path = Cartography/Size.swift; sourceTree = "<group>"; };
+		FC918430BFBBEB11BDB8757C7A37517D /* ImageDataProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageDataProvider.swift; path = Sources/General/ImageSource/ImageDataProvider.swift; sourceTree = "<group>"; };
+		FDB7880AE92096075A1E90BEAC4E0F23 /* Cartography-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Cartography-dummy.m"; sourceTree = "<group>"; };
+		FFFC061C40E7E63511815A274ADC3A1C /* Resource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Resource.swift; path = Sources/General/ImageSource/Resource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		199B2338B100DBD8A4439EA5EDC64A88 /* Frameworks */ = {
+		BA0B9250DA80447C79D65488BBFE4D6A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD02DB6D267AFD48E78FB03BAC09F1FD /* Foundation.framework in Frameworks */,
+				B42B645F159B6B547D25C27C4627E544 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -191,42 +304,151 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F07B3306CA3FE3F776588D27A5FF3D09 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67776A8ED6E3B931649AD03090E61BBC /* Accelerate.framework in Frameworks */,
+				6B3C32A5B5296C6B58EEADA1330717EB /* CFNetwork.framework in Frameworks */,
+				CE09ED6A621D2A33CD07586E0F999AA1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2AA47FA56A4D7D3E13ACF20EC7F4BBD8 /* Pods */ = {
+		0A234E7639B0EEEB0B0181C2D54FDBFD /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				DCC2BABDA6FFAB0071325549DCDFDB69 /* ARCL */,
-				9DAA26DC652225643A884C391662F7B8 /* Cartography */,
+				6BAF68D8941AC7773AB23B377AE6D060 /* ARCL */,
+				421903F95B0E5030DC1CCD19C012FC23 /* Cartography */,
+				E927E6CE1B407FC787B47E78E3FE7A10 /* Kingfisher */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		5A3F30C58191A64D12509CD5582B0C5E /* iOS */ = {
+		19FEA129AD1E80F41F8F649198BD613B /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				DA272986C62108D971D1681FF887203E /* CoreLocation.framework */,
-				CE1C87DD65575F3BFF2A2EB472E5344D /* Foundation.framework */,
-				1286BD9CC3F1431DD7E6D631FBB111F5 /* MapKit.framework */,
-				90E91DF3DD80E18E4420D8BA5480A48B /* SceneKit.framework */,
-				9198131727667F5A36AEE40099328680 /* UIKit.framework */,
+				58BFCCF8255DBCAC7A0013B0B5AE4013 /* Kingfisher.modulemap */,
+				B345CBEBE5D39A434A4EAEBAACC30ACB /* Kingfisher.xcconfig */,
+				335CDC51A7C9FF618E4A0C1D5278F1A2 /* Kingfisher-dummy.m */,
+				0C877E8E340AA62E06EA53F31288414B /* Kingfisher-Info.plist */,
+				DA2DE8144360B6622F9869F6CFBEC18F /* Kingfisher-prefix.pch */,
+				CDCDEE9E8905BCF4382B0955267CF34A /* Kingfisher-umbrella.h */,
 			);
-			name = iOS;
+			name = "Support Files";
+			path = "../Target Support Files/Kingfisher";
 			sourceTree = "<group>";
 		};
-		93838056E499D6A0DE6D167050C90D34 /* Support Files */ = {
+		223D69E76FFB57531E71FD21B1BC247E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D0A622D4350CAA047E66C3292C653434 /* Cartography.modulemap */,
-				550F2706777F2F4E9E9EF473BA76E071 /* Cartography.xcconfig */,
-				6B29F001C0930623FCE4ABB5DD32E60D /* Cartography-dummy.m */,
-				EB1116C8AE24CCD6A8E0CCB12DF5060A /* Cartography-Info.plist */,
-				74CC88B92B0A99F954572B48C4F42F70 /* Cartography-prefix.pch */,
-				4C125F290EEBFAEA139A1E3157ECB79D /* Cartography-umbrella.h */,
+				C7ADEE321186A59406F16630332B9832 /* ARCL.framework */,
+				5DEDB65EFD40099ADD720C7A97510240 /* Cartography.framework */,
+				C3F44C782D64D7EB20B61CE3844EBFAD /* Kingfisher.framework */,
+				D9B7F2C4B7D3F15CB3A60C2D644CE80F /* Pods_360iDev_AR_Navigation.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		351F1D21AA0A40C757979602F45FCF0F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C4D06986700F853A913773F42F31E41D /* Cartography.modulemap */,
+				93EF5CD1EA7142F44D514D441129905B /* Cartography.xcconfig */,
+				FDB7880AE92096075A1E90BEAC4E0F23 /* Cartography-dummy.m */,
+				59E612F4B5CD60C916155CA8B32819B6 /* Cartography-Info.plist */,
+				E02270AD942A65A15692D5B8EECE0AE1 /* Cartography-prefix.pch */,
+				A17CABD81788DFF725E9790255279289 /* Cartography-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/Cartography";
+			sourceTree = "<group>";
+		};
+		421903F95B0E5030DC1CCD19C012FC23 /* Cartography */ = {
+			isa = PBXGroup;
+			children = (
+				6544D7E555FF42E602C1F0709C1D7086 /* Align.swift */,
+				25958881774F18AEE334A46ADB3A3535 /* AutoresizingMaskLayoutProxy.swift */,
+				97CBEAA7A0C14C017BC479CEACCED287 /* Coefficients.swift */,
+				0ADDD60521D3CFF64BA518E6073521AF /* Compound.swift */,
+				D0D27D6B922B2373A9BF059757083BFD /* Constrain.swift */,
+				67739248F4BF5A8F12AA4428327BFF24 /* Constraint.swift */,
+				29CFB8273094DFEDB5CE73A3FC287911 /* ConstraintGroup.swift */,
+				822B754E860011E19A16FAC1B36A5301 /* Context.swift */,
+				A1E90AC3597B5CE6BC3B13A4516DF285 /* Dimension.swift */,
+				1A09FB2BB550D88C1D3CCFF2DA04A02D /* Distribute.swift */,
+				04C78E8431DC2C0822163064D0B18F97 /* Edge.swift */,
+				0075B3792F33F292E1C003A8C73DEBE6 /* Edges.swift */,
+				A2F2B03A73B5EAAFD23E192FC4002EFD /* Expression.swift */,
+				938E3E0464CC1B8D2082D380446D729D /* Extensions.swift */,
+				B938116B608F6A8FC8BE38361A0DB396 /* LayoutGuide.swift */,
+				6E41A91678F6959E220F997829640611 /* LayoutGuideProxy.swift */,
+				197C9D15464036FDC3E76E57FC36E530 /* LayoutItem.swift */,
+				D594A97D10011DFDDEDF46DD542E92A8 /* LayoutProxy.swift */,
+				783017A78B69187EBFD2554056197B2E /* LayoutProxy+TypeErasure.swift */,
+				F75DD0C0F367FB63F13BE01E92391749 /* LayoutSupport.swift */,
+				A873FD70F85E5747B0277AE9DB1548A9 /* LayoutSupportProxy.swift */,
+				DDE1CCF54BDA8DE657A77C53B7EE52AB /* Point.swift */,
+				620ACBC8C077AC0F1515A6BAE15ED97C /* Priority.swift */,
+				781BAB3D2B719BDB68EE993C21A237D5 /* Property.swift */,
+				FA346622314D1371BC2CAD457F410900 /* Size.swift */,
+				D3B8DF7977220773898793BA832BBFBE /* View.swift */,
+				97B4EDDEB8B5C314D2C010B22101D402 /* ViewProxy.swift */,
+				351F1D21AA0A40C757979602F45FCF0F /* Support Files */,
+			);
+			name = Cartography;
+			path = Cartography;
+			sourceTree = "<group>";
+		};
+		4DEEEAA6F1DAC46F7C15E30BE4976701 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A8016F45F8D66AF426486F5B24F68BFB /* ARCL.modulemap */,
+				40960619E60F95364DF199F5A8BD2AA2 /* ARCL.xcconfig */,
+				77D2A7828165E9546837FB27E111FED5 /* ARCL-dummy.m */,
+				1F2224431A1502FAAA1A60D5E09B0D72 /* ARCL-Info.plist */,
+				55602B4072752CCA11B37BCFEAE86910 /* ARCL-prefix.pch */,
+				B90CF28F2ABB9C4E3422C34F6717EFF1 /* ARCL-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/ARCL";
+			sourceTree = "<group>";
+		};
+		6BAF68D8941AC7773AB23B377AE6D060 /* ARCL */ = {
+			isa = PBXGroup;
+			children = (
+				88B03CFF7F0AA90EA8B4434FFDFEE600 /* ARKit_CoreLocation.swift */,
+				38296619BE339328498D5FE66F056A09 /* BaseTypes+Extensions.swift */,
+				37CD59A8D5B9570D2117B302785310F5 /* CGPoint+Extensions.swift */,
+				DCCDA3AF5584277BC5BAEA761CAE1714 /* CLLocation+Extensions.swift */,
+				6B9986A98FFABD7F008F79795A191486 /* FloatingPoint+Radians.swift */,
+				96B76B727A8DBA52139F6FB02D84CBED /* LocationAnnotationNode.swift */,
+				A1DA760DD571662488AA46D97D4E51E5 /* LocationManager.swift */,
+				DBE28F3D12D060155B2BEBE31350FFCC /* LocationNode.swift */,
+				933F366466FC412895A7087132FF866C /* PolylineNode.swift */,
+				98B26D6D90FC8EC5A55BA6F4CB804AF2 /* ScalingScheme.swift */,
+				2FF8B47F8D435A78D014C30B8E6CF021 /* SceneLocationEstimate.swift */,
+				0B1FB5CDD404177C5FCECE7D838AAB7B /* SceneLocationEstimate+Extensions.swift */,
+				BD2F76EC97A50910811478574AF35C22 /* SceneLocationManager.swift */,
+				199243B6DD0AAA4724B1FE3E2390C98D /* SceneLocationView.swift */,
+				ECD3CEA503BF8F5DBB03AB4F95E13871 /* SceneLocationView+ARSCNViewDelegate.swift */,
+				ABED31836AB45C285CAB086E33732467 /* SceneLocationViewEstimateDelegate.swift */,
+				D30163376848464481BA6470FE997C86 /* SCNNode+Extensions.swift */,
+				7FCF9534323EE11870E0F72B40C9A518 /* SCNVector3+Extensions.swift */,
+				4DEEEAA6F1DAC46F7C15E30BE4976701 /* Support Files */,
+			);
+			name = ARCL;
+			path = ARCL;
+			sourceTree = "<group>";
+		};
+		8275CCB4E8732497B1021FCBC240F3C2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F717AC75E909BA80CC900E2A6C633155 /* iOS */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		9BA606017111C7F532E458782F22BE73 /* Targets Support Files */ = {
@@ -235,42 +457,6 @@
 				9E2BC84918E69F2F603121426B121E29 /* Pods-360iDev AR Navigation */,
 			);
 			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		9DAA26DC652225643A884C391662F7B8 /* Cartography */ = {
-			isa = PBXGroup;
-			children = (
-				FD47C7CD1C0A25DBD9A8D11AC3277E16 /* Align.swift */,
-				8AA60DA4C5B8121C833081B76352E2AF /* AutoresizingMaskLayoutProxy.swift */,
-				929EE44ECF77E6218988AB1893A270B8 /* Coefficients.swift */,
-				210B20FC0E7D53FBCB5DAE47E472554B /* Compound.swift */,
-				0832BBB74852AF9A15D378B6CBE117EF /* Constrain.swift */,
-				6DEAFC03A39F339781BAB0A20FE23CC2 /* Constraint.swift */,
-				7343D48AF6C47C0F83F9725ACCFD65D4 /* ConstraintGroup.swift */,
-				FD23F23AD2D8F2BD4542AE47F8DE43DF /* Context.swift */,
-				3B2A7D64CF0307978635BB0B3CB757B4 /* Dimension.swift */,
-				F8B9F3647E8D61CB2C4D0ED0E9BB215C /* Distribute.swift */,
-				F467D874651A8D955349E7680655003A /* Edge.swift */,
-				1A436911AF48B1F965E1BB873BCA83D9 /* Edges.swift */,
-				81DA3EF765136A7F33FE4EF26AE04ACF /* Expression.swift */,
-				29D125C3865458FBC9DEEA7881F920B6 /* Extensions.swift */,
-				DA6AFA18D1A03E61A436420BE3ED63E2 /* LayoutGuide.swift */,
-				10B5BE169F5436BC802CFE9CE97607E3 /* LayoutGuideProxy.swift */,
-				2020E8696253356E82703E589CB9F34A /* LayoutItem.swift */,
-				C73D2D9E582DF84CCD337B259CCBFC52 /* LayoutProxy.swift */,
-				B8D579624B0D17FBE75BE123B841F869 /* LayoutProxy+TypeErasure.swift */,
-				DD14BA8D21D7EA21D83C49CA046A936F /* LayoutSupport.swift */,
-				92B90C3E11C14AD5659B5CEB6475C315 /* LayoutSupportProxy.swift */,
-				BF32EB9338AB56A4F4A6A9C09D3994DB /* Point.swift */,
-				80899963A1F1C4834BCD04F790C17D18 /* Priority.swift */,
-				BC7E1FC8ADC3CEB8870ACB461670867D /* Property.swift */,
-				9A16E3151F69851E76129D8B71FA24F4 /* Size.swift */,
-				03650857F6BF7615C14336DF83E01B20 /* View.swift */,
-				DE89E168F2D412B74906CE8C43BE03B5 /* ViewProxy.swift */,
-				93838056E499D6A0DE6D167050C90D34 /* Support Files */,
-			);
-			name = Cartography;
-			path = Cartography;
 			sourceTree = "<group>";
 		};
 		9E2BC84918E69F2F603121426B121E29 /* Pods-360iDev AR Navigation */ = {
@@ -290,84 +476,94 @@
 			path = "Target Support Files/Pods-360iDev AR Navigation";
 			sourceTree = "<group>";
 		};
-		B94D7768568A9992200DB461E8CF687F /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				5A3F30C58191A64D12509CD5582B0C5E /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				B94D7768568A9992200DB461E8CF687F /* Frameworks */,
-				2AA47FA56A4D7D3E13ACF20EC7F4BBD8 /* Pods */,
-				D4DF30F8D016700E479D28CA9CF9257F /* Products */,
+				8275CCB4E8732497B1021FCBC240F3C2 /* Frameworks */,
+				0A234E7639B0EEEB0B0181C2D54FDBFD /* Pods */,
+				223D69E76FFB57531E71FD21B1BC247E /* Products */,
 				9BA606017111C7F532E458782F22BE73 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		D4DF30F8D016700E479D28CA9CF9257F /* Products */ = {
+		E927E6CE1B407FC787B47E78E3FE7A10 /* Kingfisher */ = {
 			isa = PBXGroup;
 			children = (
-				C7ADEE321186A59406F16630332B9832 /* ARCL.framework */,
-				5DEDB65EFD40099ADD720C7A97510240 /* Cartography.framework */,
-				D9B7F2C4B7D3F15CB3A60C2D644CE80F /* Pods_360iDev_AR_Navigation.framework */,
+				68164A51E9D772A50FAD21FC407A6830 /* AnimatedImageView.swift */,
+				C3206D2489F58029DDC7ED3FDDA1001C /* AuthenticationChallengeResponsable.swift */,
+				27F7D4EDE68A1C65306DFCA80128EABE /* Box.swift */,
+				9EF03D6636AB3C125D90BFEBFB59CDAE /* CacheSerializer.swift */,
+				F495715984EEB27E4152D2B3B52FDCAB /* CallbackQueue.swift */,
+				3430C72A8397873BB2A63DE50B5AAFF7 /* Delegate.swift */,
+				A40E409DF5E20097FD9C45DEDA87CD1D /* Deprecated.swift */,
+				5C240FFF50930B6068F7839B77CD203D /* DiskStorage.swift */,
+				C627067441C1F80D6A961BCEBED77504 /* ExtensionHelpers.swift */,
+				C67DCCC5482F1E62ABB22BE908CA07E3 /* Filter.swift */,
+				492346FFF717277D47B4C9B858A4113C /* FormatIndicatedCacheSerializer.swift */,
+				05372F5119704F87BD6A9CD77FBD712D /* GIFAnimatedImage.swift */,
+				EB6984B6BC7615493E57621669EA87AD /* Image.swift */,
+				7F5C2A766676187E711B1FD986AA4A12 /* ImageCache.swift */,
+				8E8F18FCD92C49172C6E9B1F066BD3C6 /* ImageDataProcessor.swift */,
+				FC918430BFBBEB11BDB8757C7A37517D /* ImageDataProvider.swift */,
+				B4EB7B3C1F6F38846080C5493A5DEEBC /* ImageDownloader.swift */,
+				5B41BF5BACF5387503F3830F7D2605A9 /* ImageDownloaderDelegate.swift */,
+				C33B71BB1E78EA4952BFA7EF07974DED /* ImageDrawing.swift */,
+				4372AE4494CBE836919C0AE4BEF28F8D /* ImageFormat.swift */,
+				A30CCA3BC73DE90F57438DDB19DD50F6 /* ImageModifier.swift */,
+				F2F5B61FAF932A8AF003AFCB91ADC62A /* ImagePrefetcher.swift */,
+				0711B8391043259D27B2E0B05B7AAED6 /* ImageProcessor.swift */,
+				2BF7AD6F106C7E52FE0D7DE9C9418A6E /* ImageProgressive.swift */,
+				B18C60533C89F7AADA601A0BC56FB4A2 /* ImageTransition.swift */,
+				54A27AC4C412E5308852AE8AAA736DDC /* ImageView+Kingfisher.swift */,
+				31443E5408029358302B9B6D89BE354F /* Indicator.swift */,
+				9D9B4C7A34C69278F16873FAA8ADA9AA /* Kingfisher.h */,
+				5C667B2F4F7EA20C090951579A99E34E /* Kingfisher.swift */,
+				07E155293DB05D5391E7C52CC79DB80D /* KingfisherError.swift */,
+				F038CE50E87908CE03EBD90F116DA3CD /* KingfisherManager.swift */,
+				CDE5A4DE1FE8C3E9B08C645E914845A8 /* KingfisherOptionsInfo.swift */,
+				ED9799FADBF43E2EEE746C3F72BAB8E8 /* MemoryStorage.swift */,
+				7D99E0DC2847BD6F97401742D3E8EEC8 /* Placeholder.swift */,
+				99FA93CE03ED86B93BECF3F9274F224D /* RedirectHandler.swift */,
+				4DE8A89F1A178DBEAAD88805F54B4477 /* RequestModifier.swift */,
+				FFFC061C40E7E63511815A274ADC3A1C /* Resource.swift */,
+				DCC11CC662F0417F635B21756DA845A4 /* Result.swift */,
+				528D885D2FA1752496AF1EFB396771FE /* Runtime.swift */,
+				5C5A4BD527C094DFE9E1CE0B99718B1C /* SessionDataTask.swift */,
+				F02451BE1D9198855CF256AA48FC5793 /* SessionDelegate.swift */,
+				4001170F7E045FCB3364026663F4C423 /* SizeExtensions.swift */,
+				CC9D89BAA7E3A670A01BD5F055650481 /* Source.swift */,
+				992F8B0AF5F97B5A0FA3F9A3169F0CE7 /* Storage.swift */,
+				D7A2DD62D5382B7F2CAC36287B18956E /* String+MD5.swift */,
+				8D900606A7303FEF2A20FD68894056A1 /* UIButton+Kingfisher.swift */,
+				19FEA129AD1E80F41F8F649198BD613B /* Support Files */,
 			);
-			name = Products;
+			name = Kingfisher;
+			path = Kingfisher;
 			sourceTree = "<group>";
 		};
-		DAAFEC727592C747A98C3479DEF21FA8 /* Support Files */ = {
+		F717AC75E909BA80CC900E2A6C633155 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				C8877F177B247F41002E887810675BFE /* ARCL.modulemap */,
-				6636001AA636C0F083474D8BCAFE28E7 /* ARCL.xcconfig */,
-				248A9D7555CD82ED8870478297AD4EC0 /* ARCL-dummy.m */,
-				6FFAF595CEAC7C3E149C252FB41CAD49 /* ARCL-Info.plist */,
-				02B325E166CF7A11299006528F24ABCD /* ARCL-prefix.pch */,
-				E84C93261C8C1E5303C82B63B70131A4 /* ARCL-umbrella.h */,
+				C8C01FC1DA89E35E02AFC68ABE9A3F36 /* Accelerate.framework */,
+				4B475B75F5B3F14CBD5967168293E752 /* CFNetwork.framework */,
+				E20E36A0DB82EEDC80C75CBFB54E1521 /* CoreLocation.framework */,
+				C6C39A7CE48CA109856197B1D40A62E4 /* Foundation.framework */,
+				49A24D4A6BDDF7C0DF6317F09BEDA247 /* MapKit.framework */,
+				8FA5BD35BE4015F301DB743D6477BEF5 /* SceneKit.framework */,
+				F58F4F4101251E84606A47C2BBBFA897 /* UIKit.framework */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/ARCL";
-			sourceTree = "<group>";
-		};
-		DCC2BABDA6FFAB0071325549DCDFDB69 /* ARCL */ = {
-			isa = PBXGroup;
-			children = (
-				C4D754A8C256E2607E72D83DD0AA874B /* ARKit_CoreLocation.swift */,
-				B14ACB533DF9562DD223E444BC3F9C59 /* BaseTypes+Extensions.swift */,
-				F8C24F2F5F0928FAB9DD680C301D9A56 /* CGPoint+Extensions.swift */,
-				087E265DC27AEA4137D6D53B10C49588 /* CLLocation+Extensions.swift */,
-				B8F68262B89347CDDC8C6DD6C599996D /* FloatingPoint+Radians.swift */,
-				D87B549B046115056618E36AC5EB36B7 /* LocationAnnotationNode.swift */,
-				58B346BFF5238D1E2C045657ABFE6647 /* LocationManager.swift */,
-				2209767DB14E0AC37101C25C08774B99 /* LocationNode.swift */,
-				04E785B446831503469B054B2806D5C5 /* PolylineNode.swift */,
-				0208E6B758ACA12D7295A11B2A37189E /* ScalingScheme.swift */,
-				F3B28AC2525DD51416EDD3F2680DE436 /* SceneLocationEstimate.swift */,
-				1CDDA114AE7403AA7327B70DDAF130FB /* SceneLocationEstimate+Extensions.swift */,
-				C7A841D8590C80691A1BA389E39288CC /* SceneLocationManager.swift */,
-				3676DD2B57462AA85F9388A50A875586 /* SceneLocationView.swift */,
-				9E6B5FB1335564BA12B8F5ECDCC83DFA /* SceneLocationView+ARSCNViewDelegate.swift */,
-				0BFCA080FF4D6698A5C39295675C1AEF /* SceneLocationViewEstimateDelegate.swift */,
-				72B3B388F4B4C508CD05DC22C64F5B89 /* SCNNode+Extensions.swift */,
-				F8A3EBE503B8C51E2BB27BA4EB61B4C1 /* SCNVector3+Extensions.swift */,
-				DAAFEC727592C747A98C3479DEF21FA8 /* Support Files */,
-			);
-			name = ARCL;
-			path = ARCL;
+			name = iOS;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		7DD521F6DFB3F183A0C41703E2AE0102 /* Headers */ = {
+		5F9F1CFE304400D2F2D5217C4F471973 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AF8A364104B4AB683C83A29F91098B74 /* Pods-360iDev AR Navigation-umbrella.h in Headers */,
+				2E7C2BCE8BA9E3C6FA5007CD258E1E5F /* Pods-360iDev AR Navigation-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,6 +572,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				64EC99CAEF7D16187DB1EC49794DAF70 /* Cartography-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE1843D8294075737CB8B327FC154AEE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				203F98456AEFAAA6B288FADB0975CFCE /* Kingfisher-umbrella.h in Headers */,
+				5D4759FF7D34320BC1BFE3171BD83250 /* Kingfisher.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -410,18 +615,19 @@
 		};
 		ACD8CA596E2B2EDEECB313524E78B22A /* Pods-360iDev AR Navigation */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 455193C92033C70156B5A31B2254449F /* Build configuration list for PBXNativeTarget "Pods-360iDev AR Navigation" */;
+			buildConfigurationList = 9DB5AD5A7BF255A913EF8BA21C805B7A /* Build configuration list for PBXNativeTarget "Pods-360iDev AR Navigation" */;
 			buildPhases = (
-				7DD521F6DFB3F183A0C41703E2AE0102 /* Headers */,
-				0D6C0F214C4D8529D95F283A52A7894F /* Sources */,
-				199B2338B100DBD8A4439EA5EDC64A88 /* Frameworks */,
-				51244598DB2D32F075715207FC8486DA /* Resources */,
+				5F9F1CFE304400D2F2D5217C4F471973 /* Headers */,
+				76BDA24638D60C198617185D1B6B4C1F /* Sources */,
+				BA0B9250DA80447C79D65488BBFE4D6A /* Frameworks */,
+				250C914DFACCD60E645E82F02219AAFB /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				5D6E1103580366590D03A739A0EDF6C5 /* PBXTargetDependency */,
-				CE87A267F5EFD67E8AB93C9E12A129A3 /* PBXTargetDependency */,
+				4995085E120CFF2C3A303A07E3856BFD /* PBXTargetDependency */,
+				432750E4B6C8190ED33B1F3780FA5128 /* PBXTargetDependency */,
+				CAC1036E5C8CAA00E963C7F8587104FB /* PBXTargetDependency */,
 			);
 			name = "Pods-360iDev AR Navigation";
 			productName = "Pods-360iDev AR Navigation";
@@ -446,6 +652,24 @@
 			productReference = C7ADEE321186A59406F16630332B9832 /* ARCL.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		E8022D22FAA6690B5E1C379C1BCE1491 /* Kingfisher */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B0848743DBC84525A838C80EB5BF2A20 /* Build configuration list for PBXNativeTarget "Kingfisher" */;
+			buildPhases = (
+				AE1843D8294075737CB8B327FC154AEE /* Headers */,
+				00471725295025C4A31595E9E3BCCD6F /* Sources */,
+				F07B3306CA3FE3F776588D27A5FF3D09 /* Frameworks */,
+				7ADA03050A53BAC090314ACDC30F2BAA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Kingfisher;
+			productName = Kingfisher;
+			productReference = C3F44C782D64D7EB20B61CE3844EBFAD /* Kingfisher.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -463,12 +687,13 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = D4DF30F8D016700E479D28CA9CF9257F /* Products */;
+			productRefGroup = 223D69E76FFB57531E71FD21B1BC247E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				BB32E97F940371D391F6B8FB4F24AC15 /* ARCL */,
 				8FBDBAAAB58D03FB5BB194A7F5231422 /* Cartography */,
+				E8022D22FAA6690B5E1C379C1BCE1491 /* Kingfisher */,
 				ACD8CA596E2B2EDEECB313524E78B22A /* Pods-360iDev AR Navigation */,
 			);
 		};
@@ -482,7 +707,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		51244598DB2D32F075715207FC8486DA /* Resources */ = {
+		250C914DFACCD60E645E82F02219AAFB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7ADA03050A53BAC090314ACDC30F2BAA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -499,11 +731,56 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		0D6C0F214C4D8529D95F283A52A7894F /* Sources */ = {
+		00471725295025C4A31595E9E3BCCD6F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4989C39C6D25B7EE7E8C2EC2275315A2 /* Pods-360iDev AR Navigation-dummy.m in Sources */,
+				F6DDC4DD1F338C942261B19726F2A152 /* AnimatedImageView.swift in Sources */,
+				78ACC1F12406F3762F882273E421AD93 /* AuthenticationChallengeResponsable.swift in Sources */,
+				4F5E0DC4752A4F8AED457D83141D1264 /* Box.swift in Sources */,
+				21FEB4966B1C9F1C1BBDB5EE9E337610 /* CacheSerializer.swift in Sources */,
+				F92F8C526C438698D0A793ECFF41B2D9 /* CallbackQueue.swift in Sources */,
+				8538DA93E20F89D2DAB447709057427B /* Delegate.swift in Sources */,
+				CC6CBD6D09F3487C8119671F0709E8A6 /* Deprecated.swift in Sources */,
+				C000E10FB1EC09133D66D8E537F3FEFA /* DiskStorage.swift in Sources */,
+				07C8948559CCE74CFE5903D4B9C858BD /* ExtensionHelpers.swift in Sources */,
+				14AA684EBDBF925E4AC4D118F69A846B /* Filter.swift in Sources */,
+				79E50736E21BB37E650AAFA59D940B90 /* FormatIndicatedCacheSerializer.swift in Sources */,
+				3C1DFF8C213664BDB15F04ABA7FE4176 /* GIFAnimatedImage.swift in Sources */,
+				696DE0303F71171A3E4A9C4258F0A5D5 /* Image.swift in Sources */,
+				092C84399199A063781DAF6713C7ADE3 /* ImageCache.swift in Sources */,
+				7CB51C5EE5EB410D843BE8EA48779F71 /* ImageDataProcessor.swift in Sources */,
+				6D4D1EE91658CEE1390159F015320D55 /* ImageDataProvider.swift in Sources */,
+				AC31ABEB2D79702FFF36FB01F7157DDA /* ImageDownloader.swift in Sources */,
+				3896AA21EC5D3EB7B522FCC66CAE2D69 /* ImageDownloaderDelegate.swift in Sources */,
+				36A814BB8A755D68D5E3D96C4EAADB6E /* ImageDrawing.swift in Sources */,
+				00B48FBC95D04AEA853B9AE665D1E8E1 /* ImageFormat.swift in Sources */,
+				5B2C4CD6191E9E17463DF4DF3E5169E8 /* ImageModifier.swift in Sources */,
+				4547D2497788CEF8DB3CE88A9E724266 /* ImagePrefetcher.swift in Sources */,
+				5FAD8CAA06794CE892404AD9C408DF19 /* ImageProcessor.swift in Sources */,
+				7954A2E2DFB0092C64C9E223B7A4D744 /* ImageProgressive.swift in Sources */,
+				1388453A0BFFADA63CDB60C211FDEA89 /* ImageTransition.swift in Sources */,
+				F51B22D93BB90CB5C91FD1FE71B7D987 /* ImageView+Kingfisher.swift in Sources */,
+				DAF9A65290ECDD42CC76DF369C0E78BA /* Indicator.swift in Sources */,
+				1B14B0AFAD836E3694F74730177DAE30 /* Kingfisher-dummy.m in Sources */,
+				7DF6286BF0B2C0A02498CA9D22D9FD45 /* Kingfisher.swift in Sources */,
+				3EBA483E87C18A32151CE08617F0E00C /* KingfisherError.swift in Sources */,
+				ADEA1883A271AAEBB15FEAE77F7EFB6C /* KingfisherManager.swift in Sources */,
+				B0E9E870B0A6E278B2840B1469514912 /* KingfisherOptionsInfo.swift in Sources */,
+				A3765576E13E2188F1C8AD16104360A8 /* MemoryStorage.swift in Sources */,
+				041EB9FA2DCEE0A038C416616616D8A4 /* Placeholder.swift in Sources */,
+				83F252A836C0DECD4A2DB3FD1F28E31A /* RedirectHandler.swift in Sources */,
+				5D8B461677B082D9B12243AF68D7D329 /* RequestModifier.swift in Sources */,
+				32ADB348BDDEE0B27ED4C125694D6D02 /* Resource.swift in Sources */,
+				241E465897A56A5EE5FA73FEAEDAB450 /* Result.swift in Sources */,
+				C57309C3611CBE6E9C3120B8115A574B /* Runtime.swift in Sources */,
+				212B4D0416F2F00EB61CE5338A73C24E /* SessionDataTask.swift in Sources */,
+				DD309B2D0FC16DC15307A917449C4A7F /* SessionDelegate.swift in Sources */,
+				7A55B0BE93922D01082931F8C242A226 /* SizeExtensions.swift in Sources */,
+				257B0FEB5F806A21583C3E9B4F16F9E0 /* Source.swift in Sources */,
+				A01D0E20E670C29E4F36C0EAB9C96D8A /* Storage.swift in Sources */,
+				C21EB8249C652ED720BDDF0AF3A542CB /* String+MD5.swift in Sources */,
+				ACB9D36043B85C46D0C94266E7F1DBA2 /* UIButton+Kingfisher.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -542,6 +819,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		76BDA24638D60C198617185D1B6B4C1F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3120E4B16B04536386E4092AD13CA13F /* Pods-360iDev AR Navigation-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BD94748F4C49F372611C1B510D1CBEF9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -571,17 +856,23 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		5D6E1103580366590D03A739A0EDF6C5 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = ARCL;
-			target = BB32E97F940371D391F6B8FB4F24AC15 /* ARCL */;
-			targetProxy = 6062A585E32D70128CB7426B4A9B3CB3 /* PBXContainerItemProxy */;
-		};
-		CE87A267F5EFD67E8AB93C9E12A129A3 /* PBXTargetDependency */ = {
+		432750E4B6C8190ED33B1F3780FA5128 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Cartography;
 			target = 8FBDBAAAB58D03FB5BB194A7F5231422 /* Cartography */;
-			targetProxy = 8F397F0327F8DD3BD8B44A0D5955EE63 /* PBXContainerItemProxy */;
+			targetProxy = 1EE32B5A5CA0B933E4A2B429BE314423 /* PBXContainerItemProxy */;
+		};
+		4995085E120CFF2C3A303A07E3856BFD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ARCL;
+			target = BB32E97F940371D391F6B8FB4F24AC15 /* ARCL */;
+			targetProxy = 82B1EB4B83AE8EED55942AB592189D59 /* PBXContainerItemProxy */;
+		};
+		CAC1036E5C8CAA00E963C7F8587104FB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Kingfisher;
+			target = E8022D22FAA6690B5E1C379C1BCE1491 /* Kingfisher */;
+			targetProxy = A848D2873A40CB772727392F1F4A9CF8 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -648,7 +939,7 @@
 		};
 		393956894E1DCF3639F6D2369F891D28 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6636001AA636C0F083474D8BCAFE28E7 /* ARCL.xcconfig */;
+			baseConfigurationReference = 40960619E60F95364DF199F5A8BD2AA2 /* ARCL.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -684,7 +975,7 @@
 		};
 		50E0E109DB5CBD0E0A1D62AF791B8BDA /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 550F2706777F2F4E9E9EF473BA76E071 /* Cartography.xcconfig */;
+			baseConfigurationReference = 93EF5CD1EA7142F44D514D441129905B /* Cartography.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -720,7 +1011,7 @@
 		};
 		56DC4B18EC35A91546892F483D90FB84 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6636001AA636C0F083474D8BCAFE28E7 /* ARCL.xcconfig */;
+			baseConfigurationReference = 40960619E60F95364DF199F5A8BD2AA2 /* ARCL.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -753,7 +1044,44 @@
 			};
 			name = Debug;
 		};
-		AB42DA3412CF08CD673CDB3B9B60BCC4 /* Release */ = {
+		88B75A679D7A2D7B9A808B996E49F3FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B345CBEBE5D39A434A4EAEBAACC30ACB /* Kingfisher.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Kingfisher/Kingfisher-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Kingfisher/Kingfisher-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Kingfisher/Kingfisher.modulemap";
+				PRODUCT_MODULE_NAME = Kingfisher;
+				PRODUCT_NAME = Kingfisher;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9C275DBD15421AEBFD45B4F48DE9E7E5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B4BB928031EEE69EE4264E63640C002A /* Pods-360iDev AR Navigation.release.xcconfig */;
 			buildSettings = {
@@ -794,7 +1122,7 @@
 		};
 		AD2AD31EC3C15EAE0D0E559DC4B59B3A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 550F2706777F2F4E9E9EF473BA76E071 /* Cartography.xcconfig */;
+			baseConfigurationReference = 93EF5CD1EA7142F44D514D441129905B /* Cartography.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -827,7 +1155,7 @@
 			};
 			name = Debug;
 		};
-		DA922E1C52476526DD4BF3256BF9C58A /* Debug */ = {
+		C2C41ABBE2B4CFA57DE8FA1474FEC5CA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 804B65DF1348FB94EC750B3611416465 /* Pods-360iDev AR Navigation.debug.xcconfig */;
 			buildSettings = {
@@ -859,6 +1187,42 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D3C85F45DB51A8C745560E614E4E0F4D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B345CBEBE5D39A434A4EAEBAACC30ACB /* Kingfisher.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Kingfisher/Kingfisher-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Kingfisher/Kingfisher-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Kingfisher/Kingfisher.modulemap";
+				PRODUCT_MODULE_NAME = Kingfisher;
+				PRODUCT_NAME = Kingfisher;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -932,15 +1296,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		455193C92033C70156B5A31B2254449F /* Build configuration list for PBXNativeTarget "Pods-360iDev AR Navigation" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				DA922E1C52476526DD4BF3256BF9C58A /* Debug */,
-				AB42DA3412CF08CD673CDB3B9B60BCC4 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -950,11 +1305,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		9DB5AD5A7BF255A913EF8BA21C805B7A /* Build configuration list for PBXNativeTarget "Pods-360iDev AR Navigation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C2C41ABBE2B4CFA57DE8FA1474FEC5CA /* Debug */,
+				9C275DBD15421AEBFD45B4F48DE9E7E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		A3ADA08306546DA207812F2C1BFC474D /* Build configuration list for PBXNativeTarget "ARCL" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				56DC4B18EC35A91546892F483D90FB84 /* Debug */,
 				393956894E1DCF3639F6D2369F891D28 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B0848743DBC84525A838C80EB5BF2A20 /* Build configuration list for PBXNativeTarget "Kingfisher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3C85F45DB51A8C745560E614E4E0F4D /* Debug */,
+				88B75A679D7A2D7B9A808B996E49F3FC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

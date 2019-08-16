@@ -1,14 +1,17 @@
 PODS:
   - ARCL (1.2.1)
   - Cartography (4.0.0)
+  - Kingfisher (5.6.0)
 
 DEPENDENCIES:
   - "ARCL (from `git@github.com:ProjectDent/ARKit-CoreLocation.git`, branch `develop`)"
   - Cartography
+  - Kingfisher
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Cartography
+    - Kingfisher
 
 EXTERNAL SOURCES:
   ARCL:
@@ -23,7 +26,8 @@ CHECKOUT OPTIONS:
 SPEC CHECKSUMS:
   ARCL: d1a534afb4d5b8ff5c51c5cfe23bb998df36c606
   Cartography: c5626d29056b20f1e95c017326ee4df57cc39ad8
+  Kingfisher: 1a50df6880a60bae26f3e21a0df3d17b892f5e0b
 
-PODFILE CHECKSUM: dbeea2efb13d3498c75fec5f24edfeec8549ff2c
+PODFILE CHECKSUM: bddf8400da6cd69764c9a707a2be600a48147aa1
 
 COCOAPODS: 1.7.5
