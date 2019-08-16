@@ -27,7 +27,6 @@ struct Session: Codable {
     let location: Location
     let color: String
     let speakers: [Speaker]
-    var timestamp = Date(timeIntervalSince1970: 0)
 
     enum CodingKeys: String, CodingKey {
         case postTitle = "post_title"

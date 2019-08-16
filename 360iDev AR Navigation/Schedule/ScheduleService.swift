@@ -38,14 +38,15 @@ private extension ScheduleService {
         DateEnum.allSorted.forEach { workingSet[$0] = [Session]() }
 
         schedule.sessions.forEach { session in
-            var s = session
-            s.timestamp = s.computeTimestamp() ?? s.timestamp
-            workingSet[session.date]?.append(s)
+            workingSet[session.date]?.append(session)
         }
 
         DateEnum.allSorted.forEach { date in
             workingSet[date] = workingSet[date]?.sorted { (first, second) -> Bool in
-                return first.timestamp < second.timestamp
+                guard let t1 = first.computeTimestamp(), let t2 = second.computeTimestamp() else {
+                    return false
+                }
+                return t1 < t2
             }
         }
 
@@ -58,7 +59,10 @@ extension Session {
     struct Constants {
         static let formatter: DateFormatter = {
             let df = DateFormatter()
-            df.dateFormat = "MMMM d, yyyy H:mm a"
+            df.dateFormat = "MMMM d, yyyy h:mm a"
+            df.amSymbol = "am"
+            df.pmSymbol = "pm"
+            df.timeZone = TimeZone(abbreviation: "MDT")
 
             return df
         }()

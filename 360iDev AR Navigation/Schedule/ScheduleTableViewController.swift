@@ -26,10 +26,6 @@ class ScheduleTableViewController: UITableViewController {
         return DateEnum.allSorted.count
     }
 
-//    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-//        return DateEnum.allSorted[section].rawValue
-//    }
-
     override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let view = HeaderView()
         view.date = DateEnum.allSorted[section]
