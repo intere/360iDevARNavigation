@@ -8,13 +8,14 @@
 
 import Foundation
 
-struct ScheduleService {
-    static var shared = ScheduleService()
+class ScheduleService {
+    static let shared = ScheduleService()
+
     /// A map of DateEnum to (sorted) array of Sessions.
     var schedule = [DateEnum: [Session]]()
 
     /// Reads the schedule from the main bundle
-    mutating func loadScheduleFromBundle() {
+    func loadScheduleFromBundle() {
         guard let schedulePath = Bundle.main.path(forResource: "schedule", ofType: "json") else {
             return
         }
@@ -33,7 +34,7 @@ struct ScheduleService {
 
 private extension ScheduleService {
 
-    mutating func buildSchedule(from schedule: Schedule) {
+    func buildSchedule(from schedule: Schedule) {
         var workingSet = [DateEnum: [Session]]()
         DateEnum.allSorted.forEach { workingSet[$0] = [Session]() }
 
