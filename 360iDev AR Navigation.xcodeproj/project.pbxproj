@@ -30,6 +30,7 @@
 		368D251723043AE3003D014E /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368D251623043AE3003D014E /* Action.swift */; };
 		368D251B23043BA4003D014E /* MKMapView+Zoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368D251A23043BA4003D014E /* MKMapView+Zoom.swift */; };
 		368D251E2304F9E5003D014E /* UIViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368D251D2304F9E5003D014E /* UIViewController+Alert.swift */; };
+		36C09C89230D5EFD00749184 /* Schedule+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C09C88230D5EFD00749184 /* Schedule+Additions.swift */; };
 		7CEB054D02FDF8A723B50A2F /* Pods_360iDev_AR_Navigation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5610097DF2CE77FD5F4F905 /* Pods_360iDev_AR_Navigation.framework */; };
 /* End PBXBuildFile section */
 
@@ -71,6 +72,7 @@
 		368D251623043AE3003D014E /* Action.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
 		368D251A23043BA4003D014E /* MKMapView+Zoom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MKMapView+Zoom.swift"; sourceTree = "<group>"; };
 		368D251D2304F9E5003D014E /* UIViewController+Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alert.swift"; sourceTree = "<group>"; };
+		36C09C88230D5EFD00749184 /* Schedule+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Schedule+Additions.swift"; sourceTree = "<group>"; };
 		48AC4C60A3ACA9F1CAE6E421 /* Pods-360iDev AR Navigation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-360iDev AR Navigation.debug.xcconfig"; path = "Target Support Files/Pods-360iDev AR Navigation/Pods-360iDev AR Navigation.debug.xcconfig"; sourceTree = "<group>"; };
 		C5610097DF2CE77FD5F4F905 /* Pods_360iDev_AR_Navigation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_360iDev_AR_Navigation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6E6296B617F283D3BD5FBB6 /* Pods-360iDev AR Navigation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-360iDev AR Navigation.release.xcconfig"; path = "Target Support Files/Pods-360iDev AR Navigation/Pods-360iDev AR Navigation.release.xcconfig"; sourceTree = "<group>"; };
@@ -179,6 +181,7 @@
 			children = (
 				368D251623043AE3003D014E /* Action.swift */,
 				36000B382305016900AD733F /* Schedule.swift */,
+				36C09C88230D5EFD00749184 /* Schedule+Additions.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -385,6 +388,7 @@
 				36780F23230C2E49004439E1 /* RemoteScheduleService.swift in Sources */,
 				36000B512306508D00AD733F /* String+HTML.swift in Sources */,
 				368D24FE23009270003D014E /* AppDelegate.swift in Sources */,
+				36C09C89230D5EFD00749184 /* Schedule+Additions.swift in Sources */,
 				36000B392305016900AD733F /* Schedule.swift in Sources */,
 				368D25142300BF31003D014E /* NavigateToViewController.swift in Sources */,
 				368D251723043AE3003D014E /* Action.swift in Sources */,
