@@ -8,6 +8,9 @@ An ARKit-CoreLocation based experience for 360iDev 2019.
 AR Features include:
 - Directions to the Hyatt (conference) and the various food venues that the conference will go to.
 - AR Pins to show you the direction of each of the conference locations (Hyatt, food venues).
+- The conference schedule is available in the app and the app checks for updates to the schedule.
+
+v1.1.0 Adds remote updates to the schedule and PTR for the schedule VC.
 
 v1.0.1 Adds the Schedule
 
