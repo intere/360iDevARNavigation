@@ -22,7 +22,7 @@ class SessionCell: UITableViewCell {
         didSet {
             timeLabel.text = session?.timeLabelText
             titleLabel.text = session?.postTitle.stringByDecodingHTMLEntities
-            locationLabel.text = session?.location.rawValue
+            locationLabel.text = session?.location
             buildView()
         }
     }

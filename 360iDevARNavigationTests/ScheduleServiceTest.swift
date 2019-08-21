@@ -12,7 +12,7 @@ import XCTest
 class ScheduleServiceTest: XCTestCase {
 
     func testPrintAug27Schedule() {
-        ScheduleService.shared.loadScheduleFromBundle()
+        ScheduleService.shared.reloadBundle()
 
         ScheduleService.shared.schedule[DateEnum.august272019]?.forEach { session in
             guard let timestamp = session.computeTimestamp() else {
@@ -24,7 +24,7 @@ class ScheduleServiceTest: XCTestCase {
     }
 
     func testTimestampConversionReception() {
-        ScheduleService.shared.loadScheduleFromBundle()
+        ScheduleService.shared.reloadBundle()
         let eventName = "Evening Reception"
         let expectedDate = "2019-08-27T18:00:00"
 
@@ -40,7 +40,7 @@ class ScheduleServiceTest: XCTestCase {
     }
 
     func testTimestampConversionStoreKit() {
-        ScheduleService.shared.loadScheduleFromBundle()
+        ScheduleService.shared.reloadBundle()
         let eventName = "StoreKit/Subscriptions"
         let expectedDate = "2019-08-27T16:45:00"
 
@@ -58,7 +58,7 @@ class ScheduleServiceTest: XCTestCase {
 
 
     func testSortingBug() {
-        ScheduleService.shared.loadScheduleFromBundle()
+        ScheduleService.shared.reloadBundle()
         let earlier = "StoreKit/Subscriptions"
         let later = "Evening Reception"
 
@@ -74,7 +74,7 @@ class ScheduleServiceTest: XCTestCase {
     }
 
     func testLoadFromBundle() {
-        ScheduleService.shared.loadScheduleFromBundle()
+        ScheduleService.shared.reloadBundle()
 
         DateEnum.allSorted.forEach { date in
             guard let schedule = ScheduleService.shared.schedule[date] else {
@@ -95,7 +95,7 @@ class ScheduleServiceTest: XCTestCase {
     }
 
     func testParseSpeakers() {
-        ScheduleService.shared.loadScheduleFromBundle()
+        ScheduleService.shared.reloadBundle()
 
         DateEnum.allSorted.forEach { date in
             guard let schedule = ScheduleService.shared.schedule[date] else {
