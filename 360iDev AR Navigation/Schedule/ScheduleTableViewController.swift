@@ -58,6 +58,31 @@ class ScheduleTableViewController: UITableViewController {
         return sessionCell
     }
 
+    @IBAction
+    func didRefresh(_ source: UIRefreshControl) {
+        RemoteScheduleService.shared.cacheSchedule { (schedule, error) in
+            defer {
+                DispatchQueue.main.async {
+                    source.endRefreshing()
+                }
+            }
+            if let error = error {
+                return DispatchQueue.main.async {
+                    self.showErrorAlert(message: "Failed to update schedule: \(error.localizedDescription)")
+                }
+            }
+            if schedule == nil {
+                return DispatchQueue.main.async {
+                    self.showErrorAlert(message: "Failed to update the schedule, please try again")
+                }
+            }
+            ScheduleService.shared.reloadBundle()
+            DispatchQueue.main.async {
+                self.tableView.reloadData()
+            }
+        }
+    }
+
 }
 
 class HeaderView: UIView {

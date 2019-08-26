@@ -32,6 +32,12 @@
                             <outlet property="delegate" destination="31w-1C-SPA" id="igA-Fc-1E4"/>
                         </connections>
                     </tableView>
+                    <refreshControl key="refreshControl" opaque="NO" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="2C2-xb-f5F">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <connections>
+                            <action selector="didRefresh:" destination="31w-1C-SPA" eventType="valueChanged" id="mte-xp-B7h"/>
+                        </connections>
+                    </refreshControl>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eS3-xm-QAe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

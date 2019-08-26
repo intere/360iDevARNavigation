@@ -13,11 +13,13 @@
 		36000B37230500EC00AD733F /* schedule.json in Resources */ = {isa = PBXBuildFile; fileRef = 36000B36230500EC00AD733F /* schedule.json */; };
 		36000B392305016900AD733F /* Schedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36000B382305016900AD733F /* Schedule.swift */; };
 		36000B412305019900AD733F /* ARNavigationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36000B402305019900AD733F /* ARNavigationTests.swift */; };
-		36000B492305038000AD733F /* ScheduleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36000B482305038000AD733F /* ScheduleService.swift */; };
 		36000B4B2305045E00AD733F /* ScheduleServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36000B4A2305045E00AD733F /* ScheduleServiceTest.swift */; };
 		36000B4D23050DD800AD733F /* SessionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36000B4C23050DD800AD733F /* SessionCell.swift */; };
 		36000B4F230628DF00AD733F /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36000B4E230628DF00AD733F /* UIColor+Hex.swift */; };
 		36000B512306508D00AD733F /* String+HTML.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36000B502306508D00AD733F /* String+HTML.swift */; };
+		36780F23230C2E49004439E1 /* RemoteScheduleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36780F22230C2E49004439E1 /* RemoteScheduleService.swift */; };
+		36780F25230C2F05004439E1 /* ScheduleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36780F24230C2F05004439E1 /* ScheduleService.swift */; };
+		36780F27230C322C004439E1 /* RemoteScheduleServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36780F26230C322C004439E1 /* RemoteScheduleServiceTest.swift */; };
 		368D24FE23009270003D014E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368D24FD23009270003D014E /* AppDelegate.swift */; };
 		368D250023009270003D014E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368D24FF23009270003D014E /* MainViewController.swift */; };
 		368D250323009270003D014E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 368D250123009270003D014E /* Main.storyboard */; };
@@ -28,6 +30,7 @@
 		368D251723043AE3003D014E /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368D251623043AE3003D014E /* Action.swift */; };
 		368D251B23043BA4003D014E /* MKMapView+Zoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368D251A23043BA4003D014E /* MKMapView+Zoom.swift */; };
 		368D251E2304F9E5003D014E /* UIViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368D251D2304F9E5003D014E /* UIViewController+Alert.swift */; };
+		36C09C89230D5EFD00749184 /* Schedule+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C09C88230D5EFD00749184 /* Schedule+Additions.swift */; };
 		7CEB054D02FDF8A723B50A2F /* Pods_360iDev_AR_Navigation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5610097DF2CE77FD5F4F905 /* Pods_360iDev_AR_Navigation.framework */; };
 /* End PBXBuildFile section */
 
@@ -50,11 +53,13 @@
 		36000B3E2305019900AD733F /* 360iDevARNavigationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = 360iDevARNavigationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		36000B402305019900AD733F /* ARNavigationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARNavigationTests.swift; sourceTree = "<group>"; };
 		36000B422305019900AD733F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		36000B482305038000AD733F /* ScheduleService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleService.swift; sourceTree = "<group>"; };
 		36000B4A2305045E00AD733F /* ScheduleServiceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleServiceTest.swift; sourceTree = "<group>"; };
 		36000B4C23050DD800AD733F /* SessionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionCell.swift; sourceTree = "<group>"; };
 		36000B4E230628DF00AD733F /* UIColor+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
 		36000B502306508D00AD733F /* String+HTML.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+HTML.swift"; sourceTree = "<group>"; };
+		36780F22230C2E49004439E1 /* RemoteScheduleService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteScheduleService.swift; sourceTree = "<group>"; };
+		36780F24230C2F05004439E1 /* ScheduleService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleService.swift; sourceTree = "<group>"; };
+		36780F26230C322C004439E1 /* RemoteScheduleServiceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteScheduleServiceTest.swift; sourceTree = "<group>"; };
 		368D24FA23009270003D014E /* 360iDev AR Navigation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "360iDev AR Navigation.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		368D24FD23009270003D014E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		368D24FF23009270003D014E /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -67,6 +72,7 @@
 		368D251623043AE3003D014E /* Action.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
 		368D251A23043BA4003D014E /* MKMapView+Zoom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MKMapView+Zoom.swift"; sourceTree = "<group>"; };
 		368D251D2304F9E5003D014E /* UIViewController+Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alert.swift"; sourceTree = "<group>"; };
+		36C09C88230D5EFD00749184 /* Schedule+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Schedule+Additions.swift"; sourceTree = "<group>"; };
 		48AC4C60A3ACA9F1CAE6E421 /* Pods-360iDev AR Navigation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-360iDev AR Navigation.debug.xcconfig"; path = "Target Support Files/Pods-360iDev AR Navigation/Pods-360iDev AR Navigation.debug.xcconfig"; sourceTree = "<group>"; };
 		C5610097DF2CE77FD5F4F905 /* Pods_360iDev_AR_Navigation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_360iDev_AR_Navigation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6E6296B617F283D3BD5FBB6 /* Pods-360iDev AR Navigation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-360iDev AR Navigation.release.xcconfig"; path = "Target Support Files/Pods-360iDev AR Navigation/Pods-360iDev AR Navigation.release.xcconfig"; sourceTree = "<group>"; };
@@ -106,7 +112,6 @@
 				36000B36230500EC00AD733F /* schedule.json */,
 				36000B322305003A00AD733F /* Schedule.storyboard */,
 				36000B342305005700AD733F /* ScheduleTableViewController.swift */,
-				36000B482305038000AD733F /* ScheduleService.swift */,
 				36000B4C23050DD800AD733F /* SessionCell.swift */,
 			);
 			path = Schedule;
@@ -118,8 +123,18 @@
 				36000B402305019900AD733F /* ARNavigationTests.swift */,
 				36000B422305019900AD733F /* Info.plist */,
 				36000B4A2305045E00AD733F /* ScheduleServiceTest.swift */,
+				36780F26230C322C004439E1 /* RemoteScheduleServiceTest.swift */,
 			);
 			path = 360iDevARNavigationTests;
+			sourceTree = "<group>";
+		};
+		36780F21230C2E25004439E1 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				36780F24230C2F05004439E1 /* ScheduleService.swift */,
+				36780F22230C2E49004439E1 /* RemoteScheduleService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		368D24F123009270003D014E = {
@@ -146,16 +161,17 @@
 		368D24FC23009270003D014E /* 360iDev AR Navigation */ = {
 			isa = PBXGroup;
 			children = (
-				36000B312304FFEB00AD733F /* Schedule */,
-				368D251823043B63003D014E /* AR */,
-				368D251923043B91003D014E /* Extensions */,
-				368D251C23043D2E003D014E /* Main */,
-				368D251523043AD2003D014E /* Models */,
+				368D250923009274003D014E /* Info.plist */,
 				368D24FD23009270003D014E /* AppDelegate.swift */,
 				368D250423009274003D014E /* Assets.xcassets */,
-				368D250923009274003D014E /* Info.plist */,
+				368D251823043B63003D014E /* AR */,
+				368D251923043B91003D014E /* Extensions */,
 				368D250623009274003D014E /* LaunchScreen.storyboard */,
+				368D251C23043D2E003D014E /* Main */,
 				368D250123009270003D014E /* Main.storyboard */,
+				368D251523043AD2003D014E /* Models */,
+				36000B312304FFEB00AD733F /* Schedule */,
+				36780F21230C2E25004439E1 /* Services */,
 			);
 			path = "360iDev AR Navigation";
 			sourceTree = "<group>";
@@ -165,6 +181,7 @@
 			children = (
 				368D251623043AE3003D014E /* Action.swift */,
 				36000B382305016900AD733F /* Schedule.swift */,
+				36C09C88230D5EFD00749184 /* Schedule+Additions.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -354,6 +371,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				36000B4B2305045E00AD733F /* ScheduleServiceTest.swift in Sources */,
+				36780F27230C322C004439E1 /* RemoteScheduleServiceTest.swift in Sources */,
 				36000B412305019900AD733F /* ARNavigationTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -366,12 +384,14 @@
 				368D250023009270003D014E /* MainViewController.swift in Sources */,
 				36000B352305005700AD733F /* ScheduleTableViewController.swift in Sources */,
 				36000B4F230628DF00AD733F /* UIColor+Hex.swift in Sources */,
+				36780F25230C2F05004439E1 /* ScheduleService.swift in Sources */,
+				36780F23230C2E49004439E1 /* RemoteScheduleService.swift in Sources */,
 				36000B512306508D00AD733F /* String+HTML.swift in Sources */,
 				368D24FE23009270003D014E /* AppDelegate.swift in Sources */,
+				36C09C89230D5EFD00749184 /* Schedule+Additions.swift in Sources */,
 				36000B392305016900AD733F /* Schedule.swift in Sources */,
 				368D25142300BF31003D014E /* NavigateToViewController.swift in Sources */,
 				368D251723043AE3003D014E /* Action.swift in Sources */,
-				36000B492305038000AD733F /* ScheduleService.swift in Sources */,
 				368D251B23043BA4003D014E /* MKMapView+Zoom.swift in Sources */,
 				368D25122300B567003D014E /* ShowPinsViewController.swift in Sources */,
 				368D251E2304F9E5003D014E /* UIViewController+Alert.swift in Sources */,

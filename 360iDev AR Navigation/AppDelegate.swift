@@ -15,11 +15,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 
-        DispatchQueue.global(qos: .utility).async {
-            ScheduleService.shared.loadScheduleFromBundle()
-        }
-
         return true
+    }
+
+    func applicationDidBecomeActive(_ application: UIApplication) {
+        DispatchQueue.global(qos: .utility).async {
+            ScheduleService.shared.reloadBundle()
+        }
+        RemoteScheduleService.shared.cacheSchedule { (schedule, error) in
+            if let error = error {
+                return assertionFailure(error.localizedDescription)
+            }
+            guard schedule != nil else {
+                return assertionFailure()
+            }
+            ScheduleService.shared.reloadBundle()
+            assert(ScheduleService.shared.source == .documents)
+        }
     }
 
 }
