@@ -594,14 +594,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 268S5GJFWZ;
+				DEVELOPMENT_TEAM = 45BLJDGAMS;
 				INFOPLIST_FILE = "360iDev AR Navigation/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.intere.360iDev-AR-Navigation";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.intere.360iDev-AR-Navigation-WTD";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -614,14 +614,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 268S5GJFWZ;
+				DEVELOPMENT_TEAM = 45BLJDGAMS;
 				INFOPLIST_FILE = "360iDev AR Navigation/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.intere.360iDev-AR-Navigation";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.intere.360iDev-AR-Navigation-WTD";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;

@@ -11,6 +11,14 @@ import UIKit
 
 class ScheduleTableViewController: UITableViewController {
 
+    let dateFormatter: DateFormatter = {
+        var formatter = DateFormatter()
+        //August 25, 2019
+        formatter.dateFormat = "MMMM dd, yyyy"
+        
+        return formatter
+    }()
+
     class func loadFromStoryboard() -> ScheduleTableViewController {
         return UIStoryboard(name: "Schedule", bundle: nil).instantiateViewController(withIdentifier: "ScheduleTableViewController") as! ScheduleTableViewController
     }
@@ -21,6 +29,8 @@ class ScheduleTableViewController: UITableViewController {
 
         tableView.rowHeight = UITableView.automaticDimension
         tableView.estimatedRowHeight = 100
+        
+        scrollToNow()
     }
 
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -81,6 +91,24 @@ class ScheduleTableViewController: UITableViewController {
                 self.tableView.reloadData()
             }
         }
+    }
+
+    func scrollToNow() {
+        let now = Date()
+    
+        let dateString = dateFormatter.string(from: now)
+        
+        guard let currentDay = DateEnum(rawValue: dateString),
+            let dateIndex = DateEnum.allSorted.firstIndex(of: currentDay),
+            let sessions = ScheduleService.shared.schedule[DateEnum.allSorted[dateIndex]] else {
+                return
+        }
+
+        let itemIndex = sessions.indices.filter {
+            sessions[$0].compareDates(to: now)
+        }.first
+
+        tableView.scrollToRow(at: IndexPath(item: itemIndex ?? 0, section: dateIndex), at: .middle, animated: true)
     }
 
 }
