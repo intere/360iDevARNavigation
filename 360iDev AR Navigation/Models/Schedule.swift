@@ -34,6 +34,7 @@ struct Session: Codable {
         case endTime = "end_time"
         case date, location, color, speakers
     }
+
 }
 
 enum DateEnum: String, Codable {
